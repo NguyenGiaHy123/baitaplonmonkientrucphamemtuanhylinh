@@ -20,8 +20,8 @@
                     <table class="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th style="width: 40px"> Học kỳ</th>
-                                <th style="width: 70px"> Năm học</th>
+                              
+                               
                                 <th style="width: 50px"> Số TC đăng ký</th>
                                 <th style="width: 50px"> Số TC tích lũy</th>
                                 <th style="width: 50px"> Số TC học lại</th>
@@ -38,16 +38,8 @@
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td>@item.hocky</td>
-                                    <td>
-                                        @foreach (var nh in ViewData["NamHoc"] as List<lophpnamhoc>)
-                                        {
-                                            if (nh.id == item.namhoc)
-                                            {
-                                                @nh.namhoc
-                                            }
-                                        }
-                                    </td>
+                                   
+                                   
                                     <td>@item.soTCDK</td>
                                     <td>@item.soTCMoi</td>
                                     <td>@item.soTCHoclai</td>
@@ -107,18 +99,18 @@
                         <thead>
                             <tr>
                                 <th style="width: 20px"> STT</th>
-                                <th style="width: 80px"> Học kỳ</th>
+                               
                                 <th style="width: 80px"> Mã HP</th>
                                 <th> Tên HP</th>
                                 <th style="width: 32px"> Số TC</th>
-                                <th style="width: 32px"> Điểm CC</th>
-                                <th style="width: 32px"> Điểm BT</th>
+                                <th style="width: 32px"> Điểm Chuuyên cần </th>
+                                <th style="width: 32px"> Điểm thường kỳ </th>
                                 <th style="width: 32px"> Điểm GK</th>
                                 <th style="width: 32px"> Điểm CK</th>
-                                <th style="width: 32px"> Điểm T10</th>
-                                <th style="width: 32px"> Điểm T4</th>
+                                <th style="width: 32px"> Điểm Thực hành 1</th>
+                                <th style="width: 32px"> Điểm Thực hành 2</th>
                                 <th style="width: 32px"> Điểm chữ</th>
-                                <th style="width: 32px"> So khớp</th>
+                               
                             </tr>
                         </thead>
                         <tbody>
@@ -134,16 +126,7 @@
                                             {
                                                 <tr>
                                                     <td>@(stt++)</td>
-                                                    <td>
-                                                        @lhp.hocky/
-                                                        @foreach (var nh in ViewData["NamHoc"] as List<lophpnamhoc>)
-                                                        {
-                                                            if (nh.id == lhp.namhoc_id)
-                                                            {
-                                                                @nh.namhoc
-                                                            }
-                                                        }
-                                                    </td>
+                                                   
                                                     <td>@hp.ma</td>
                                                     <td>@hp.Ten</td>
                                                     <td>
@@ -183,7 +166,7 @@
                                                         }
                                                     </td>
                                                     <td>@item.diemchu</td>
-                                                    <td>@item.sokhop</td>
+                                                    
                                                 </tr>
                                             }
                                         }
