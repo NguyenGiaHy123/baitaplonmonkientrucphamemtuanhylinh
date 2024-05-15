@@ -1,0 +1,63 @@
+﻿@using PagedList;
+@using PagedList.Mvc;
+
+@using DaoTaoTinChiCIT.Models;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Trang Thông Tin Đào Tạo";
+}
+
+@if (Session["CurrentLogin"] != null)
+{
+    Response.Redirect("~/Accounts/Logout");
+}
+
+<div class="span12">
+    <div class="widget">
+        <div class="widget-header">
+            <i class="fa fa-bullhorn"></i>
+            <h3>Thông báo</h3>
+        </div>
+        <div class="widget-content">
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#thongbaochung" data-toggle="tab">Thông báo chung</a></li>
+                    <li><a href="#lophocphan" data-toggle="tab">Thông báo đến lớp học phần</a></li>
+                    <li><a href="#doantotnghiep" data-toggle="tab">Thông báo về nhận đồ án tốt nghiệp & công nhận đồ án tốt nghiệp</a></li>
+                </ul>
+                <br>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="thongbaochung">
+                        <ul class="news-items">
+                            @foreach (var item in (@ViewData["TinTuc"] as PagedList<web_tintuc>))
+                            {
+                                <li>
+                                    <div class="news-item-date">
+                                        @if (item.QuanTrong == 1)
+                                        {
+                                            <span class="fa fa-star note"></span>
+                                        }
+                                        <span class="news-item-day">@item.ngaytao.Value.Day</span>
+                                        <span class="news-item-month">@item.ngaytao.Value.Month/@item.ngaytao.Value.Year</span>
+                                    </div>
+                                    <div class="news-item-detail">
+                                        <a href="#" class="news-item-title">@item.TieuDe</a>
+                                        <p class="news-item-preview">@Html.Raw(item.Noidung)</p>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                        @Html.PagedListPager((@ViewData["TinTuc"] as PagedList<web_tintuc>), page => Url.Action("Index", new { page = page }), PagedListRenderOptions.OnlyShowFivePagesAtATime)
+                    </div>
+                    <div class="tab-pane" id="lophocphan">
+                        Thông báo tới lớp học phần
+                    </div>
+                    <div class="tab-pane" id="doantotnghiep">
+                        Thông báo tới sinh viên làm đồ án tốt nghiệp
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+﻿@using DaoTaoTinChiCIT.Models;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Bảng điều khiển";
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("1"))
+{
+    <div class="span12">
+        <div class="widget">
+            <div class="widget-header">
+                <i class="fa fa-tachometer"></i>
+                <h3>Bảng điều khiển</h3>
+            </div>
+            <div class="widget-content">
+                @*<div class="shortcuts">
+                    <a href="javascript:;" class="shortcut">
+                        <i class="shortcut-icon icon-list-alt"></i><span class="shortcut-label">Apps</span>
+                    </a><a href="javascript:;" class="shortcut">
+                        <i class="shortcut-icon icon-bookmark"></i><span class="shortcut-label">Bookmarks</span>
+                    </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-signal"></i> <span class="shortcut-label">Reports</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-comment"></i><span class="shortcut-label">Comments</span> </a><a href="javascript:;" class="shortcut">
+                        <i class="shortcut-icon icon-user"></i><span class="shortcut-label">Users</span>
+                    </a><a href="javascript:;" class="shortcut">
+                        <i class="shortcut-icon icon-file"></i><span class="shortcut-label">Notes</span>
+                    </a><a href="javascript:;" class="shortcut"><i class="shortcut-icon icon-picture"></i> <span class="shortcut-label">Photos</span> </a><a href="javascript:;" class="shortcut"> <i class="shortcut-icon icon-tag"></i><span class="shortcut-label">Tags</span> </a>
+                </div>*@
+                <h1>Trang quản trị website đào tạo tín chỉ trường Cao đẳng Công nghệ Thông tin</h1>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    Response.Redirect("~/Accounts/Index");
+}

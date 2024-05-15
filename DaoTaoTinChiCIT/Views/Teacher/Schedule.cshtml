@@ -1,0 +1,23 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Lịch dạy học";
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("4"))
+{
+    <div class="span12">
+        <div class="widget ">
+            <div class="widget-header">
+                <i class="fa fa-calendar"></i>
+                <h3>Lịch dạy học</h3>
+            </div>
+            <div class="widget-content">
+                ff
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    Response.Redirect("~/Accounts/Index");
+}

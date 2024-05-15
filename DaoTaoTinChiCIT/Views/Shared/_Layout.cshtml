@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Trường Đại Học Công Nghiệp Thành Phố Hồ Chí Minh </title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" />
+    @Styles.Render("~/css/bootstrap")
+    @Styles.Render("~/css/datetimepicker")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/ckeditor")
+    @*@Styles.Render("~/css/datatables")
+    @Scripts.Render("~/bundles/datatables")*@
+</head>
+<body>
+    @RenderPage("~/Views/Shared/_Header.cshtml")
+
+    <div class="main">
+        <div class="main-inner">
+            <div class="container">
+                <div class="row">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @if (!Session["Pages"].ToString().Contains("Login"))
+    {
+        <div class="footer">
+            <div class="footer-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="span12"> &copy; 2024 <a href="http://www.cit.udn.vn/">Trường Đại Học Công Nghiệp Thành Phố Hồ Chí Minh </a>. </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/datetimepicker")
+    @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+        /* Menu Handler */
+        $(function () {
+            var url = window.location.pathname;
+            var activePage = url.substring(url.lastIndexOf('/') + 1);
+            $('.mainnav li a').each(function () {
+                var currentPage = this.href.substring(this.href.lastIndexOf('/') + 1);
+
+                if (activePage == currentPage) {
+                    $(this).parent().addClass('active');
+                }
+            });
+        });
+
+        $('.subnavbar').addClass('original').clone().insertAfter('.subnavbar').addClass('cloned').css('position', 'fixed').css('width', '100%').css('top', '0').css('margin-top', '0').css('z-index', '500').removeClass('original').hide();
+        scrollIntervalID = setInterval(stickIt, 10);
+        function stickIt() {
+            var orgElementPos = $('.original').offset();
+            orgElementTop = orgElementPos.top;
+            if ($(window).scrollTop() >= (orgElementTop)) {
+                orgElement = $('.original');
+                coordsOrgElement = orgElement.offset();
+                leftOrgElement = coordsOrgElement.left;
+                widthOrgElement = orgElement.css('width');
+
+                $('.cloned').css('left', leftOrgElement + 'px').css('top', 0).css('width', widthOrgElement + 'px').show();
+                $('.original').css('visibility', 'hidden');
+            } else {
+                $('.cloned').hide();
+                $('.original').css('visibility', 'visible');
+            }
+        }
+
+        //FAQ
+        $(function () {
+            $('.faq-list').goFaq();
+        });
+
+        //Datetimepicker
+        $(function () {
+            $('#datetimepicker').datetimepicker({
+                format: "dd/mm/yyyy",
+                language: 'vi',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 2,
+                minView: 2,
+                forceParse: 0
+            });
+            $('#datetimepicker-open').datetimepicker({
+                format: "dd/mm/yyyy HH:ii:ss P",
+                showMeridian: true,
+                autoclose: true,
+                todayBtn: true,
+                language: 'vi',
+                minuteStep: 10
+            });
+            $('#datetimepicker-close').datetimepicker({
+                format: "dd/mm/yyyy HH:ii:ss P",
+                showMeridian: true,
+                autoclose: true,
+                todayBtn: true,
+                language: 'vi',
+                minuteStep: 10
+            });
+            $('#datetimepicker-open').datetimepicker().on('changeDate', function (ev) {
+                $('#datetimepicker-close').datetimepicker('setStartDate', ev.date);
+            });
+            $('#datetimepicker-close').datetimepicker().on('changeDate', function (ev) {
+                $('#datetimepicker-open').datetimepicker('setEndDate', ev.date);
+            });
+        });
+    </script>
+</body>
+</html>

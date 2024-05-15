@@ -1,0 +1,183 @@
+﻿@using DaoTaoTinChiCIT.Models;
+
+@{
+    Layout = "~/Views/Admin/_Manage.cshtml";
+    ViewBag.Title = "Danh Sách Lớp Học Phần Đang Mở";
+    var stt = 1;
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("1"))
+{
+    <div class="span9">
+        @if (TempData.ContainsKey("Error"))
+        {
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Error"]
+            </div>
+        }
+        @if (TempData.ContainsKey("Success"))
+        {
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Success"]
+            </div>
+        }
+
+        <div class="widget">
+            <div class="widget-header">
+                <i class="fa fa-indent"></i>
+                <h3>Danh sách lớp học phần đang mở đăng ký</h3>
+            </div>
+            <div class="widget-content">
+                <div style="margin-bottom: 20px">
+                    <div class="row">
+                        @using (Html.BeginForm("ClassOpen", "Admin", FormMethod.Get, new { @class = "form-custom" }))
+                        {
+                            <div class="span4">
+                                <div class="control-group">
+                                    @Html.DropDownList("Nganh", null, "Tất cả các ngành", new { @class = "span4" })
+                                </div>
+                            </div>
+                            <div class="span2">
+                                <div class="control-group">
+                                    <input type="submit" class="btn btn-primary" value="Xem danh sách lớp học phần" />
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 20px"> STT</th>
+                            <th style="width: 80px"> Mã lớp HP</th>
+                            <th style="width: auto"> Tên lớp học phần</th>
+                            <th style="width: 55px"> SL mở ĐK</th>
+                            <th style="width: 150px"> Thời gian mở đăng ký</th>
+                            <th style="width: 150px"> Thời gian kết thúc đăng ký</th>
+                            <th class="td-actions" style="width: 80px"> </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewData["ThoiGianDK"] as List<web_thoigiandk>)
+                        {
+                            foreach (var lhp in ViewData["LopHocPhan"] as List<lophocphan>)
+                            {
+                                if (lhp.ID == Convert.ToInt32(item.lophp_id))
+                                {
+                                    foreach (var hp in ViewData["HocPhan"] as List<hocphan>)
+                                    {
+                                        if (hp.ID == lhp.hocphan_id)
+                                        {
+                                            <tr>
+                                                <td>@(stt++)</td>
+                                                <td>@lhp.Ma</td>
+                                                <td>@lhp.Ten</td>
+                                                <td style="text-align: center">@lhp.soluong</td>
+                                                <td>@item.Ngay1</td>
+                                                <td>@item.Ngay2</td>
+                                                <td class="td-actions">
+                                                    <a href="#changeTime" class="btn btn-small btn-success open-changeModal" data-id="@item.ID" data-ma="@lhp.Ma" data-ngay1="@item.Ngay1" data-ngay2="@item.Ngay2" data-socho="@lhp.soluong" data-toggle="modal"><i class="btn-icon-only fa fa-edit"></i></a>
+                                                    <a href="#delModal" class="btn btn-small btn-danger open-delModal" data-id="@item.ID" data-toggle="modal"><i class="btn-icon-only fa fa-close"> </i></a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+
+                @*Sửa thời gian*@
+                <div id="changeTime" class="modal-custom hide fade edit-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Thay đổi thời gian ĐK lớp học phần</h3>
+                    </div>
+                    @using (Html.BeginForm("EditClass", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <label class="control-label">Mã lớp học phần:</label>
+                                        <div class="controls">
+                                            @Html.Hidden("ID", ViewData["ID"], new { @class = "ID", @id = "ID" })
+                                            @Html.Hidden("MaLHP", ViewData["MaLHP"], new { @class = "MaLHP", @id = "MaLHP" })
+                                            @Html.TextBox("MaLHP", ViewData["MaLHP"], new { @class = "span4 MaLHP disabled", @placeholder = "Mã lớp học phần", @disabled = "true" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <label class="control-label">Thời gian mở đăng ký:</label>
+                                        <div class="controls">
+                                            @Html.TextBox("Ngay1", ViewData["Ngay1"], new { @class = "span4 Ngay1", @id = "datetimepicker-open", @placeholder = "Ngày mở đăng ký" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <label class="control-label">Thời gian kết thúc đăng ký:</label>
+                                        <div class="controls">
+                                            @Html.TextBox("Ngay2", ViewData["Ngay2"], new { @class = "span4 Ngay2", @id = "datetimepicker-close", @placeholder = "Ngày kết thúc đăng ký" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <label class="control-label">Số lượng sinh viên dự kiến:</label>
+                                        <div class="controls">
+                                            @Html.TextBox("SoCho", ViewData["SoCho"], new { @class = "span4 SoCho", @placeholder = "Số lượng sinh viên dự kiến" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Hủy</button>
+                            <button class="btn btn-primary">Sửa</button>
+                        </div>
+                    }
+                </div>
+
+                @*Hủy lớp học phần*@
+                <div id="delModal" class="modal-custom hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Hủy lớp học phần đang mở đăng ký</h3>
+                    </div>
+                    @using (Html.BeginForm("DelPartialClasses", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <input type="hidden" name="ID" class="ID" value="" />
+                                        <label class="control-label">Bạn có chắc chắn muốn hủy lớp học phần này?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+                            <button class="btn btn-primary" type="submit">Có</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    Response.Redirect("~/Accounts/Index");
+}

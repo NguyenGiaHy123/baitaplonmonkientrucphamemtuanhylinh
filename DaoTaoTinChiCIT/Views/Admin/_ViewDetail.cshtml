@@ -1,0 +1,65 @@
+﻿@using DaoTaoTinChiCIT.Models;
+@model IEnumerable<DaoTaoTinChiCIT.Models.web_dangky_hp>
+
+@{
+    var stt = 1;
+    string action = ViewBag.Action;
+}
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">@ViewBag.Message</h3>
+</div>
+<div class="modal-body">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th style="width: 20px"> STT</th>
+                <th style="width: 150px"> Mã sinh viên</th>
+                <th> Tên sinh viên</th>
+                <th style="width: 60px"> Lớp</th>
+                <th style="width: 170px"> Thời gian đăng ký</th>
+                <th class="td-actions" style="width: 100px"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                foreach (var sv in ViewData["SinhVien"] as List<hoso_sv>)
+                {
+                    if (sv.ma == Convert.ToString(item.sv_id))
+                    {
+                        <tr>
+                            <td>@(stt++)</td>
+                            <td>@sv.ma</td>
+                            <td>@sv.hodem @sv.ten</td>
+                            <td>
+                                @foreach (var lop in ViewData["Lop"] as List<lop>)
+                                {
+                                    if (lop.ID == sv.lop_id)
+                                    {
+                                        @lop.Ten
+                                    }
+                                }
+                            </td>
+                            <td>@item.thoigian</td>
+                            <td class="td-actions">
+                                @if (action == "CancelRegister")
+                                {
+                                    <a href="~/Admin/CancelRegister/@item.ID" class="btn btn-small btn-danger"> Hủy đăng ký</a>
+                                }
+                                else
+                                {
+                                    <a href="~/Admin/RestoreRegister/@item.ID" class="btn btn-small btn-success"> Khôi phục ĐK</a>
+                                }
+                            </td>
+                        </tr>
+                    }
+                }
+            }
+        </tbody>
+    </table>
+</div>
+<div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Đóng</button>
+</div>

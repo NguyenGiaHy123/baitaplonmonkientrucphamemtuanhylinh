@@ -1,0 +1,64 @@
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.dll.config
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.pdb
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Optimization.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Optimization.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.csprojResolveAssemblyReference.cache
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.dll.config
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Optimization.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Optimization.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.csprojResolveAssemblyReference.cache
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\EntityFramework.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\EntityFramework.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\PagedList.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\PagedList.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.dll.config
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.Tests.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\EntityFramework.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Optimization.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\MoreLinq.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\PagedList.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\EntityFramework.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Optimization.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\MoreLinq.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\PagedList.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.csprojResolveAssemblyReference.cache
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT.Tests\obj\Debug\DaoTaoTinChiCIT.Tests.pdb

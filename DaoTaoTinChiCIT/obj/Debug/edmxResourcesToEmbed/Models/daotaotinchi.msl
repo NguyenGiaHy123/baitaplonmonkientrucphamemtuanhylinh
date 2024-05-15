@@ -1,0 +1,1163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="daotaotinchiModelStoreContainer" CdmEntityContainer="daotaotinchiEntities">
+    <EntitySetMapping Name="diemrenluyens">
+      <EntityTypeMapping TypeName="daotaotinchiModel.diemrenluyen">
+        <MappingFragment StoreEntitySet="diemrenluyen">
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="diemrl1" ColumnName="diemrl1" />
+          <ScalarProperty Name="diemrl2" ColumnName="diemrl2" />
+          <ScalarProperty Name="diemrl2ky" ColumnName="diemrl2ky" />
+          <ScalarProperty Name="diemrltl" ColumnName="diemrltl" />
+          <ScalarProperty Name="namhoc_id" ColumnName="namhoc_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_capdaotao">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_capdaotao">
+        <MappingFragment StoreEntitySet="dm_capdaotao">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_capquyetdinh">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_capquyetdinh">
+        <MappingFragment StoreEntitySet="dm_capquyetdinh">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_chucdanh">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_chucdanh">
+        <MappingFragment StoreEntitySet="dm_chucdanh">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_chucvu_cb">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_chucvu_cb">
+        <MappingFragment StoreEntitySet="dm_chucvu_cb">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_chucvu_doanthe">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_chucvu_doanthe">
+        <MappingFragment StoreEntitySet="dm_chucvu_doanthe">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_chucvu_sv">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_chucvu_sv">
+        <MappingFragment StoreEntitySet="dm_chucvu_sv">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_congthuc">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_congthuc">
+        <MappingFragment StoreEntitySet="dm_congthuc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="cot" ColumnName="cot" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_cotdiem">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_cotdiem">
+        <MappingFragment StoreEntitySet="dm_cotdiem">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="mota" ColumnName="mota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_danhhieu">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_danhhieu">
+        <MappingFragment StoreEntitySet="dm_danhhieu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_dantoc">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_dantoc">
+        <MappingFragment StoreEntitySet="dm_dantoc">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_diemchu">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_diemchu">
+        <MappingFragment StoreEntitySet="dm_diemchu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="mota" ColumnName="mota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_doituongmiengiam">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_doituongmiengiam">
+        <MappingFragment StoreEntitySet="dm_doituongmiengiam">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="mucgiam" ColumnName="mucgiam" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_gio">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_gio">
+        <MappingFragment StoreEntitySet="dm_gio">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="start" ColumnName="start" />
+          <ScalarProperty Name="end" ColumnName="end" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_hocham">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_hocham">
+        <MappingFragment StoreEntitySet="dm_hocham">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_hocvi">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_hocvi">
+        <MappingFragment StoreEntitySet="dm_hocvi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_ht_daotao">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_ht_daotao">
+        <MappingFragment StoreEntitySet="dm_ht_daotao">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_ht_khenthuong">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_ht_khenthuong">
+        <MappingFragment StoreEntitySet="dm_ht_khenthuong">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_ht_kyluat">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_ht_kyluat">
+        <MappingFragment StoreEntitySet="dm_ht_kyluat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_ht_thi">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_ht_thi">
+        <MappingFragment StoreEntitySet="dm_ht_thi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_khoanthuchi">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_khoanthuchi">
+        <MappingFragment StoreEntitySet="dm_khoanthuchi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="phaiNop" ColumnName="phaiNop" />
+          <ScalarProperty Name="tien" ColumnName="tien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_khuvucts">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_khuvucts">
+        <MappingFragment StoreEntitySet="dm_khuvucts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_kieuhocphan">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_kieuhocphan">
+        <MappingFragment StoreEntitySet="dm_kieuhocphan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_loaihocky">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_loaihocky">
+        <MappingFragment StoreEntitySet="dm_loaihocky">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_loaihocphan">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_loaihocphan">
+        <MappingFragment StoreEntitySet="dm_loaihocphan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_muchocphi">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_muchocphi">
+        <MappingFragment StoreEntitySet="dm_muchocphi">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="muchocphi" ColumnName="muchocphi" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+          <ScalarProperty Name="namhoc_id" ColumnName="namhoc_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_nganhang">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_nganhang">
+        <MappingFragment StoreEntitySet="dm_nganhang">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_ngoaingu">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_ngoaingu">
+        <MappingFragment StoreEntitySet="dm_ngoaingu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_quanhegd">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_quanhegd">
+        <MappingFragment StoreEntitySet="dm_quanhegd">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_quoctich">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_quoctich">
+        <MappingFragment StoreEntitySet="dm_quoctich">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_thanhphan_banthan">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_thanhphan_banthan">
+        <MappingFragment StoreEntitySet="dm_thanhphan_banthan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_thanhphan_giadinh">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_thanhphan_giadinh">
+        <MappingFragment StoreEntitySet="dm_thanhphan_giadinh">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_tongiao">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_tongiao">
+        <MappingFragment StoreEntitySet="dm_tongiao">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="donvis">
+      <EntityTypeMapping TypeName="daotaotinchiModel.donvi">
+        <MappingFragment StoreEntitySet="donvi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="bpcha_id" ColumnName="bpcha_id" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="IsDaotao" ColumnName="IsDaotao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="forms">
+      <EntityTypeMapping TypeName="daotaotinchiModel.form">
+        <MappingFragment StoreEntitySet="forms">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="ten_viettat" ColumnName="ten_viettat" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+          <ScalarProperty Name="dem" ColumnName="dem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="funtion_form">
+      <EntityTypeMapping TypeName="daotaotinchiModel.funtion_form">
+        <MappingFragment StoreEntitySet="funtion_form">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="funtion_id" ColumnName="funtion_id" />
+          <ScalarProperty Name="form_id" ColumnName="form_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="funtions">
+      <EntityTypeMapping TypeName="daotaotinchiModel.funtion">
+        <MappingFragment StoreEntitySet="funtions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="caption" ColumnName="caption" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="groups">
+      <EntityTypeMapping TypeName="daotaotinchiModel.group">
+        <MappingFragment StoreEntitySet="groups">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hinhthuc_khenthuong">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hinhthuc_khenthuong">
+        <MappingFragment StoreEntitySet="hinhthuc_khenthuong">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="cancukhenthuong" ColumnName="cancukhenthuong" />
+          <ScalarProperty Name="lido" ColumnName="lido" />
+          <ScalarProperty Name="hinhthuckhenthuong" ColumnName="hinhthuckhenthuong" />
+          <ScalarProperty Name="soquyetdinh" ColumnName="soquyetdinh" />
+          <ScalarProperty Name="nguoibanhanh" ColumnName="nguoibanhanh" />
+          <ScalarProperty Name="ngaybanhanh" ColumnName="ngaybanhanh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hinhthuc_kyluat">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hinhthuc_kyluat">
+        <MappingFragment StoreEntitySet="hinhthuc_kyluat">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ma_nguoi" ColumnName="ma_nguoi" />
+          <ScalarProperty Name="vipham" ColumnName="vipham" />
+          <ScalarProperty Name="thoigianxayra" ColumnName="thoigianxayra" />
+          <ScalarProperty Name="diadiem" ColumnName="diadiem" />
+          <ScalarProperty Name="mota" ColumnName="mota" />
+          <ScalarProperty Name="nguoichungkien" ColumnName="nguoichungkien" />
+          <ScalarProperty Name="hinhthuc_vipham" ColumnName="hinhthuc_vipham" />
+          <ScalarProperty Name="hinhthuc_kyluat1" ColumnName="hinhthuc_kyluat" />
+          <ScalarProperty Name="giaithic" ColumnName="giaithic" />
+          <ScalarProperty Name="lido" ColumnName="lido" />
+          <ScalarProperty Name="soquyetdinh" ColumnName="soquyetdinh" />
+          <ScalarProperty Name="nguoibanhanh" ColumnName="nguoibanhanh" />
+          <ScalarProperty Name="ngay" ColumnName="ngay" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hocbongs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocbong">
+        <MappingFragment StoreEntitySet="hocbong">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="sv_id" ColumnName="sv_id" />
+          <ScalarProperty Name="Diemtb" ColumnName="Diemtb" />
+          <ScalarProperty Name="LoaiHB_id" ColumnName="LoaiHB_id" />
+          <ScalarProperty Name="MucHB" ColumnName="MucHB" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+          <ScalarProperty Name="namhoc" ColumnName="namhoc" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hockies">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocky">
+        <MappingFragment StoreEntitySet="hocky">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="loaihk_id" ColumnName="loaihk_id" />
+          <ScalarProperty Name="nam_id" ColumnName="nam_id" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hocphans">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocphan">
+        <MappingFragment StoreEntitySet="hocphan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="TenVT" ColumnName="TenVT" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="nganh_id" ColumnName="nganh_id" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hocphan_quanhe">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocphan_quanhe">
+        <MappingFragment StoreEntitySet="hocphan_quanhe">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="khung_hp_id" ColumnName="khung_hp_id" />
+          <ScalarProperty Name="hp_id" ColumnName="hp_id" />
+          <ScalarProperty Name="hp_quanhe_trc" ColumnName="hp_quanhe_trc" />
+          <ScalarProperty Name="loaihp_quanhe_id" ColumnName="loaihp_quanhe_id" />
+          <ScalarProperty Name="id_nhom" ColumnName="id_nhom" />
+          <ScalarProperty Name="and" ColumnName="and" />
+          <ScalarProperty Name="or" ColumnName="or" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hocphis">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocphi">
+        <MappingFragment StoreEntitySet="hocphi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="sv_id" ColumnName="sv_id" />
+          <ScalarProperty Name="Hocphi1" ColumnName="Hocphi" />
+          <ScalarProperty Name="HocphiHL" ColumnName="HocphiHL" />
+          <ScalarProperty Name="MucGiam" ColumnName="MucGiam" />
+          <ScalarProperty Name="doituongmiengiam_id" ColumnName="doituongmiengiam_id" />
+          <ScalarProperty Name="Tatca" ColumnName="Tatca" />
+          <ScalarProperty Name="TienGiam" ColumnName="TienGiam" />
+          <ScalarProperty Name="HocBong" ColumnName="HocBong" />
+          <ScalarProperty Name="HocphiCong" ColumnName="HocphiCong" />
+          <ScalarProperty Name="HocphiCon" ColumnName="HocphiCon" />
+          <ScalarProperty Name="HocphiNo" ColumnName="HocphiNo" />
+          <ScalarProperty Name="HocphiThua" ColumnName="HocphiThua" />
+          <ScalarProperty Name="Dathu" ColumnName="Dathu" />
+          <ScalarProperty Name="Dachi" ColumnName="Dachi" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="SoHP" ColumnName="SoHP" />
+          <ScalarProperty Name="SoHPHL" ColumnName="SoHPHL" />
+          <ScalarProperty Name="SoTinchi" ColumnName="SoTinchi" />
+          <ScalarProperty Name="SoTinchiHL" ColumnName="SoTinchiHL" />
+          <ScalarProperty Name="ListHP" ColumnName="ListHP" />
+          <ScalarProperty Name="ListHPHL" ColumnName="ListHPHL" />
+          <ScalarProperty Name="CUSBTT" ColumnName="CUSBTT" />
+          <ScalarProperty Name="CUSBYT" ColumnName="CUSBYT" />
+          <ScalarProperty Name="CUSSTS" ColumnName="CUSSTS" />
+          <ScalarProperty Name="CUSAV" ColumnName="CUSAV" />
+          <ScalarProperty Name="CUSKSK" ColumnName="CUSKSK" />
+          <ScalarProperty Name="CUSQP" ColumnName="CUSQP" />
+          <ScalarProperty Name="Chono" ColumnName="Chono" />
+          <ScalarProperty Name="Daukhoa" ColumnName="Daukhoa" />
+          <ScalarProperty Name="Daukhoa_T" ColumnName="Daukhoa_T" />
+          <ScalarProperty Name="DuDaukhoa" ColumnName="DuDaukhoa" />
+          <ScalarProperty Name="DuDaukhoa_T" ColumnName="DuDaukhoa_T" />
+          <ScalarProperty Name="CUSAV_T" ColumnName="CUSAV_T" />
+          <ScalarProperty Name="CUSBTT_T" ColumnName="CUSBTT_T" />
+          <ScalarProperty Name="CUSBYT_T" ColumnName="CUSBYT_T" />
+          <ScalarProperty Name="CUSKSK_T" ColumnName="CUSKSK_T" />
+          <ScalarProperty Name="CUSQP_T" ColumnName="CUSQP_T" />
+          <ScalarProperty Name="CUSSTS_T" ColumnName="CUSSTS_T" />
+          <ScalarProperty Name="UQuyen" ColumnName="UQuyen" />
+          <ScalarProperty Name="Tongthu" ColumnName="Tongthu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hocvus">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocvu">
+        <MappingFragment StoreEntitySet="hocvu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="hk_id" ColumnName="hk_id" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+          <ScalarProperty Name="namhoc" ColumnName="namhoc" />
+          <ScalarProperty Name="sv_id" ColumnName="sv_id" />
+          <ScalarProperty Name="HPDangky" ColumnName="HPDangky" />
+          <ScalarProperty Name="DiemTBHT" ColumnName="DiemTBHT" />
+          <ScalarProperty Name="DiemTBHT10" ColumnName="DiemTBHT10" />
+          <ScalarProperty Name="DiemTBHB" ColumnName="DiemTBHB" />
+          <ScalarProperty Name="XepLoai" ColumnName="XepLoai" />
+          <ScalarProperty Name="HPTichluy" ColumnName="HPTichluy" />
+          <ScalarProperty Name="DiemTBTL" ColumnName="DiemTBTL" />
+          <ScalarProperty Name="HPBatbuoc" ColumnName="HPBatbuoc" />
+          <ScalarProperty Name="SoTCHoclai" ColumnName="SoTCHoclai" />
+          <ScalarProperty Name="XepLoaiCK" ColumnName="XepLoaiCK" />
+          <ScalarProperty Name="DiemTB2Ky" ColumnName="DiemTB2Ky" />
+          <ScalarProperty Name="DiemRL" ColumnName="DiemRL" />
+          <ScalarProperty Name="DiemRLCK" ColumnName="DiemRLCK" />
+          <ScalarProperty Name="HPhoclai" ColumnName="HPhoclai" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="Xuly" ColumnName="Xuly" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hocvu_dk">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocvu_dk">
+        <MappingFragment StoreEntitySet="hocvu_dk">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+          <ScalarProperty Name="namhoc" ColumnName="namhoc" />
+          <ScalarProperty Name="id_sv" ColumnName="id_sv" />
+          <ScalarProperty Name="diemTB4" ColumnName="diemTB4" />
+          <ScalarProperty Name="diemTB10" ColumnName="diemTB10" />
+          <ScalarProperty Name="diemHB" ColumnName="diemHB" />
+          <ScalarProperty Name="diemTL4" ColumnName="diemTL4" />
+          <ScalarProperty Name="diemTL10" ColumnName="diemTL10" />
+          <ScalarProperty Name="soTCDK" ColumnName="soTCDK" />
+          <ScalarProperty Name="soTCMoi" ColumnName="soTCMoi" />
+          <ScalarProperty Name="soTCHoclai" ColumnName="soTCHoclai" />
+          <ScalarProperty Name="xuly" ColumnName="xuly" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hocvu_test">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hocvu_test">
+        <MappingFragment StoreEntitySet="hocvu_test">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+          <ScalarProperty Name="namhoc" ColumnName="namhoc" />
+          <ScalarProperty Name="id_sv" ColumnName="id_sv" />
+          <ScalarProperty Name="diemTB4" ColumnName="diemTB4" />
+          <ScalarProperty Name="diemTB10" ColumnName="diemTB10" />
+          <ScalarProperty Name="diemHB" ColumnName="diemHB" />
+          <ScalarProperty Name="diemTL4" ColumnName="diemTL4" />
+          <ScalarProperty Name="diemTL10" ColumnName="diemTL10" />
+          <ScalarProperty Name="soTCDK" ColumnName="soTCDK" />
+          <ScalarProperty Name="soTCMoi" ColumnName="soTCMoi" />
+          <ScalarProperty Name="soTCHoclai" ColumnName="soTCHoclai" />
+          <ScalarProperty Name="xuly" ColumnName="xuly" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hoso_cb">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hoso_cb">
+        <MappingFragment StoreEntitySet="hoso_cb">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="bp_id" ColumnName="bp_id" />
+          <ScalarProperty Name="hodem" ColumnName="hodem" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="noisinh" ColumnName="noisinh" />
+          <ScalarProperty Name="quequan" ColumnName="quequan" />
+          <ScalarProperty Name="truquan" ColumnName="truquan" />
+          <ScalarProperty Name="dantoc_id" ColumnName="dantoc_id" />
+          <ScalarProperty Name="tongiao_id" ColumnName="tongiao_id" />
+          <ScalarProperty Name="doituong_id" ColumnName="doituong_id" />
+          <ScalarProperty Name="quoctich_id" ColumnName="quoctich_id" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
+          <ScalarProperty Name="ngay_cap" ColumnName="ngay_cap" />
+          <ScalarProperty Name="noicap" ColumnName="noicap" />
+          <ScalarProperty Name="tp_giadinh_id" ColumnName="tp_giadinh_id" />
+          <ScalarProperty Name="tp_banthan_id" ColumnName="tp_banthan_id" />
+          <ScalarProperty Name="ngay_congtac" ColumnName="ngay_congtac" />
+          <ScalarProperty Name="ngay_nhapngu" ColumnName="ngay_nhapngu" />
+          <ScalarProperty Name="ngay_xuatngu" ColumnName="ngay_xuatngu" />
+          <ScalarProperty Name="ngay_vaonganh" ColumnName="ngay_vaonganh" />
+          <ScalarProperty Name="ngay_vaocoquan" ColumnName="ngay_vaocoquan" />
+          <ScalarProperty Name="chucvu_doanthe_id" ColumnName="chucvu_doanthe_id" />
+          <ScalarProperty Name="doan" ColumnName="doan" />
+          <ScalarProperty Name="ngay_doan" ColumnName="ngay_doan" />
+          <ScalarProperty Name="dang" ColumnName="dang" />
+          <ScalarProperty Name="ngay_dang" ColumnName="ngay_dang" />
+          <ScalarProperty Name="ngay_chinhthuc" ColumnName="ngay_chinhthuc" />
+          <ScalarProperty Name="noivao_dang" ColumnName="noivao_dang" />
+          <ScalarProperty Name="nguoigt1" ColumnName="nguoigt1" />
+          <ScalarProperty Name="nguoigt2" ColumnName="nguoigt2" />
+          <ScalarProperty Name="thuongbinh" ColumnName="thuongbinh" />
+          <ScalarProperty Name="giadinhlietsi" ColumnName="giadinhlietsi" />
+          <ScalarProperty Name="huongTBLS" ColumnName="huongTBLS" />
+          <ScalarProperty Name="trinhdo_hocvan" ColumnName="trinhdo_hocvan" />
+          <ScalarProperty Name="trinhdo_chuyenmon" ColumnName="trinhdo_chuyenmon" />
+          <ScalarProperty Name="hethong_daotao" ColumnName="hethong_daotao" />
+          <ScalarProperty Name="nam_totnghiep" ColumnName="nam_totnghiep" />
+          <ScalarProperty Name="nganh_id" ColumnName="nganh_id" />
+          <ScalarProperty Name="ngoaingu_id" ColumnName="ngoaingu_id" />
+          <ScalarProperty Name="chucvu_id" ColumnName="chucvu_id" />
+          <ScalarProperty Name="bhxh_so" ColumnName="bhxh_so" />
+          <ScalarProperty Name="bhxh_ngaycap" ColumnName="bhxh_ngaycap" />
+          <ScalarProperty Name="bhxh_noi" ColumnName="bhxh_noi" />
+          <ScalarProperty Name="bhxh_ngaydong" ColumnName="bhxh_ngaydong" />
+          <ScalarProperty Name="bhxh_mucdong" ColumnName="bhxh_mucdong" />
+          <ScalarProperty Name="suckhoe" ColumnName="suckhoe" />
+          <ScalarProperty Name="nhanxet" ColumnName="nhanxet" />
+          <ScalarProperty Name="tunhanxet" ColumnName="tunhanxet" />
+          <ScalarProperty Name="TrinhdoChinhtri" ColumnName="TrinhdoChinhtri" />
+          <ScalarProperty Name="hocham_id" ColumnName="hocham_id" />
+          <ScalarProperty Name="hocvi_id" ColumnName="hocvi_id" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+          <ScalarProperty Name="Dienthoai" ColumnName="Dienthoai" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="anh" ColumnName="anh" />
+          <ScalarProperty Name="is_giangvien" ColumnName="is_giangvien" />
+          <ScalarProperty Name="nganhang_id" ColumnName="nganhang_id" />
+          <ScalarProperty Name="nganhang_sotk" ColumnName="nganhang_sotk" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="hoso_sv">
+      <EntityTypeMapping TypeName="daotaotinchiModel.hoso_sv">
+        <MappingFragment StoreEntitySet="hoso_sv">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="hodem" ColumnName="hodem" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="gioitinh" ColumnName="gioitinh" />
+          <ScalarProperty Name="ngaysinh" ColumnName="ngaysinh" />
+          <ScalarProperty Name="noisinh" ColumnName="noisinh" />
+          <ScalarProperty Name="nganh_id" ColumnName="nganh_id" />
+          <ScalarProperty Name="lop_id" ColumnName="lop_id" />
+          <ScalarProperty Name="chucvu_id" ColumnName="chucvu_id" />
+          <ScalarProperty Name="dantoc_id" ColumnName="dantoc_id" />
+          <ScalarProperty Name="tongiao_id" ColumnName="tongiao_id" />
+          <ScalarProperty Name="quequan" ColumnName="quequan" />
+          <ScalarProperty Name="diachi" ColumnName="diachi" />
+          <ScalarProperty Name="didong" ColumnName="didong" />
+          <ScalarProperty Name="dienthoai" ColumnName="dienthoai" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="cmnd" ColumnName="cmnd" />
+          <ScalarProperty Name="ngaycap" ColumnName="ngaycap" />
+          <ScalarProperty Name="noicap" ColumnName="noicap" />
+          <ScalarProperty Name="cha" ColumnName="cha" />
+          <ScalarProperty Name="me" ColumnName="me" />
+          <ScalarProperty Name="tp_giadinh_id" ColumnName="tp_giadinh_id" />
+          <ScalarProperty Name="tp_banthan_id" ColumnName="tp_banthan_id" />
+          <ScalarProperty Name="quatrinh" ColumnName="quatrinh" />
+          <ScalarProperty Name="chucvu_doanthe_id" ColumnName="chucvu_doanthe_id" />
+          <ScalarProperty Name="doan" ColumnName="doan" />
+          <ScalarProperty Name="ngay_doan" ColumnName="ngay_doan" />
+          <ScalarProperty Name="dang" ColumnName="dang" />
+          <ScalarProperty Name="ngay_dang" ColumnName="ngay_dang" />
+          <ScalarProperty Name="ngay_chinhthuc" ColumnName="ngay_chinhthuc" />
+          <ScalarProperty Name="ngoaingu_id" ColumnName="ngoaingu_id" />
+          <ScalarProperty Name="quoctich_id" ColumnName="quoctich_id" />
+          <ScalarProperty Name="ngay_nhaphoc" ColumnName="ngay_nhaphoc" />
+          <ScalarProperty Name="diem_dauvao" ColumnName="diem_dauvao" />
+          <ScalarProperty Name="doituong_id" ColumnName="doituong_id" />
+          <ScalarProperty Name="ts_sbd" ColumnName="ts_sbd" />
+          <ScalarProperty Name="ts_khuvuc_id" ColumnName="ts_khuvuc_id" />
+          <ScalarProperty Name="nam_totnghiep" ColumnName="nam_totnghiep" />
+          <ScalarProperty Name="tro_diachi" ColumnName="tro_diachi" />
+          <ScalarProperty Name="tro_dienthoai" ColumnName="tro_dienthoai" />
+          <ScalarProperty Name="tamtru_ngay" ColumnName="tamtru_ngay" />
+          <ScalarProperty Name="tamtru_dk" ColumnName="tamtru_dk" />
+          <ScalarProperty Name="nganhang_id" ColumnName="nganhang_id" />
+          <ScalarProperty Name="anh" ColumnName="anh" />
+          <ScalarProperty Name="nganhang_sotk" ColumnName="nganhang_sotk" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khoahocs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.khoahoc">
+        <MappingFragment StoreEntitySet="khoahoc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khungs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.khung">
+        <MappingFragment StoreEntitySet="khung">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="khung_hp">
+      <EntityTypeMapping TypeName="daotaotinchiModel.khung_hp">
+        <MappingFragment StoreEntitySet="khung_hp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="khung_id" ColumnName="khung_id" />
+          <ScalarProperty Name="hp_id" ColumnName="hp_id" />
+          <ScalarProperty Name="sotc" ColumnName="sotc" />
+          <ScalarProperty Name="lythuyet" ColumnName="lythuyet" />
+          <ScalarProperty Name="thuchanh" ColumnName="thuchanh" />
+          <ScalarProperty Name="doan" ColumnName="doan" />
+          <ScalarProperty Name="mota" ColumnName="mota" />
+          <ScalarProperty Name="motahoctruoc" ColumnName="motahoctruoc" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lops">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lop">
+        <MappingFragment StoreEntitySet="lop">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ma" ColumnName="Ma" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="khung_id" ColumnName="khung_id" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="ht_daotao_id" ColumnName="ht_daotao_id" />
+          <ScalarProperty Name="capdaotao_id" ColumnName="capdaotao_id" />
+          <ScalarProperty Name="id_gv" ColumnName="id_gv" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+          <ScalarProperty Name="nganh_id" ColumnName="nganh_id" />
+          <ScalarProperty Name="namnhaphoc" ColumnName="namnhaphoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lop_gvcn">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lop_gvcn">
+        <MappingFragment StoreEntitySet="lop_gvcn">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="lop_id" ColumnName="lop_id" />
+          <ScalarProperty Name="gv_id" ColumnName="gv_id" />
+          <ScalarProperty Name="Hocky" ColumnName="Hocky" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lophocphans">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lophocphan">
+        <MappingFragment StoreEntitySet="lophocphan">
+          <ScalarProperty Name="soluong" ColumnName="soluong" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="Ma" ColumnName="Ma" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="hocphan_id" ColumnName="hocphan_id" />
+          <ScalarProperty Name="giaovien_id" ColumnName="giaovien_id" />
+          <ScalarProperty Name="donvi_id" ColumnName="donvi_id" />
+          <ScalarProperty Name="namhoc_id" ColumnName="namhoc_id" />
+          <ScalarProperty Name="hocky" ColumnName="hocky" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lophocphandiems">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lophocphandiem">
+        <MappingFragment StoreEntitySet="lophocphandiem">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idlop" ColumnName="idlop" />
+          <ScalarProperty Name="idcotdiem" ColumnName="idcotdiem" />
+          <ScalarProperty Name="heso" ColumnName="heso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lophocphandiemchungs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lophocphandiemchung">
+        <MappingFragment StoreEntitySet="lophocphandiemchung">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idcotdiem" ColumnName="idcotdiem" />
+          <ScalarProperty Name="heso" ColumnName="heso" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lophps">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lophp">
+        <MappingFragment StoreEntitySet="lophp">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="idlop" ColumnName="idlop" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="diem1" ColumnName="diem1" />
+          <ScalarProperty Name="diem2" ColumnName="diem2" />
+          <ScalarProperty Name="diem3" ColumnName="diem3" />
+          <ScalarProperty Name="diem4" ColumnName="diem4" />
+          <ScalarProperty Name="diem5" ColumnName="diem5" />
+          <ScalarProperty Name="diem6" ColumnName="diem6" />
+          <ScalarProperty Name="diem7" ColumnName="diem7" />
+          <ScalarProperty Name="diem8" ColumnName="diem8" />
+          <ScalarProperty Name="diem9" ColumnName="diem9" />
+          <ScalarProperty Name="diem10" ColumnName="diem10" />
+          <ScalarProperty Name="diemtb" ColumnName="diemtb" />
+          <ScalarProperty Name="diemchu" ColumnName="diemchu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lophpdanhsaches">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lophpdanhsach">
+        <MappingFragment StoreEntitySet="lophpdanhsach">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="lophocphan_id" ColumnName="lophocphan_id" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="diemcc" ColumnName="diemcc" />
+          <ScalarProperty Name="diembt" ColumnName="diembt" />
+          <ScalarProperty Name="diemgk" ColumnName="diemgk" />
+          <ScalarProperty Name="diemck" ColumnName="diemck" />
+          <ScalarProperty Name="diemdoan" ColumnName="diemdoan" />
+          <ScalarProperty Name="diemtrungbinh" ColumnName="diemtrungbinh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lophpdktamthois">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lophpdktamthoi">
+        <MappingFragment StoreEntitySet="lophpdktamthoi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="idlop" ColumnName="idlop" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="diem1" ColumnName="diem1" />
+          <ScalarProperty Name="diem2" ColumnName="diem2" />
+          <ScalarProperty Name="diem3" ColumnName="diem3" />
+          <ScalarProperty Name="diem4" ColumnName="diem4" />
+          <ScalarProperty Name="diem5" ColumnName="diem5" />
+          <ScalarProperty Name="diem6" ColumnName="diem6" />
+          <ScalarProperty Name="diem7" ColumnName="diem7" />
+          <ScalarProperty Name="diem8" ColumnName="diem8" />
+          <ScalarProperty Name="diem9" ColumnName="diem9" />
+          <ScalarProperty Name="diem10" ColumnName="diem10" />
+          <ScalarProperty Name="diemtb" ColumnName="diemtb" />
+          <ScalarProperty Name="diemchu" ColumnName="diemchu" />
+          <ScalarProperty Name="sokhop" ColumnName="sokhop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lophpnamhocs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.lophpnamhoc">
+        <MappingFragment StoreEntitySet="lophpnamhoc">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="namhoc" ColumnName="namhoc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mienhocs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.mienhoc">
+        <MappingFragment StoreEntitySet="mienhoc">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="id_hocphan" ColumnName="id_hocphan" />
+          <ScalarProperty Name="stc" ColumnName="stc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="namdaotaos">
+      <EntityTypeMapping TypeName="daotaotinchiModel.namdaotao">
+        <MappingFragment StoreEntitySet="namdaotao">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nam" ColumnName="nam" />
+          <ScalarProperty Name="ghichu" ColumnName="ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nganhs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.nganh">
+        <MappingFragment StoreEntitySet="nganh">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ma" ColumnName="ma" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="bp_id" ColumnName="bp_id" />
+          <ScalarProperty Name="Kyhieu" ColumnName="Kyhieu" />
+          <ScalarProperty Name="capdaotao" ColumnName="capdaotao" />
+          <ScalarProperty Name="hedaotao" ColumnName="hedaotao" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+          <ScalarProperty Name="Locked" ColumnName="Locked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhieunghanhs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.nhieunghanh">
+        <MappingFragment StoreEntitySet="nhieunghanh">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="idkhung2" ColumnName="idkhung2" />
+          <ScalarProperty Name="idkhung3" ColumnName="idkhung3" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="nhom_tienquyet">
+      <EntityTypeMapping TypeName="daotaotinchiModel.nhom_tienquyet">
+        <MappingFragment StoreEntitySet="nhom_tienquyet">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="id_hocphan" ColumnName="id_hocphan" />
+          <ScalarProperty Name="id_khung" ColumnName="id_khung" />
+          <ScalarProperty Name="and" ColumnName="and" />
+          <ScalarProperty Name="or" ColumnName="or" />
+          <ScalarProperty Name="id_loaihocphan" ColumnName="id_loaihocphan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phieuthus">
+      <EntityTypeMapping TypeName="daotaotinchiModel.phieuthu">
+        <MappingFragment StoreEntitySet="phieuthu">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="soPT" ColumnName="soPT" />
+          <ScalarProperty Name="nam" ColumnName="nam" />
+          <ScalarProperty Name="id_thuhocphi" ColumnName="id_thuhocphi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="phonghocs">
+      <EntityTypeMapping TypeName="daotaotinchiModel.phonghoc">
+        <MappingFragment StoreEntitySet="phonghoc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="SoCho" ColumnName="SoCho" />
+          <ScalarProperty Name="ThiNghiem" ColumnName="ThiNghiem" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="role_group">
+      <EntityTypeMapping TypeName="daotaotinchiModel.role_group">
+        <MappingFragment StoreEntitySet="role_group">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="role_id" ColumnName="role_id" />
+          <ScalarProperty Name="funtion_id" ColumnName="funtion_id" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="roles">
+      <EntityTypeMapping TypeName="daotaotinchiModel.role">
+        <MappingFragment StoreEntitySet="roles">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thanhtoan_nganhang">
+      <EntityTypeMapping TypeName="daotaotinchiModel.thanhtoan_nganhang">
+        <MappingFragment StoreEntitySet="thanhtoan_nganhang">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TaiKhoan" ColumnName="TaiKhoan" />
+          <ScalarProperty Name="loai" ColumnName="loai" />
+          <ScalarProperty Name="thoigian" ColumnName="thoigian" />
+          <ScalarProperty Name="Sotien" ColumnName="Sotien" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="this">
+      <EntityTypeMapping TypeName="daotaotinchiModel.thi">
+        <MappingFragment StoreEntitySet="thi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="lophp_id" ColumnName="lophp_id" />
+          <ScalarProperty Name="nhomthi_id" ColumnName="nhomthi_id" />
+          <ScalarProperty Name="ngay" ColumnName="ngay" />
+          <ScalarProperty Name="gio" ColumnName="gio" />
+          <ScalarProperty Name="phong_id" ColumnName="phong_id" />
+          <ScalarProperty Name="cb1_id" ColumnName="cb1_id" />
+          <ScalarProperty Name="cb2_id" ColumnName="cb2_id" />
+          <ScalarProperty Name="Ghichu" ColumnName="Ghichu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thietlaphesodiemrls">
+      <EntityTypeMapping TypeName="daotaotinchiModel.thietlaphesodiemrl">
+        <MappingFragment StoreEntitySet="thietlaphesodiemrl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="hocki1" ColumnName="hocki1" />
+          <ScalarProperty Name="hocki2" ColumnName="hocki2" />
+          <ScalarProperty Name="nam1" ColumnName="nam1" />
+          <ScalarProperty Name="nam2" ColumnName="nam2" />
+          <ScalarProperty Name="nam3" ColumnName="nam3" />
+          <ScalarProperty Name="nam4" ColumnName="nam4" />
+          <ScalarProperty Name="nam5" ColumnName="nam5" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thoikhoabieux">
+      <EntityTypeMapping TypeName="daotaotinchiModel.thoikhoabieu">
+        <MappingFragment StoreEntitySet="thoikhoabieu">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="idlop" ColumnName="idlop" />
+          <ScalarProperty Name="tuan" ColumnName="tuan" />
+          <ScalarProperty Name="thu" ColumnName="thu" />
+          <ScalarProperty Name="phong_id" ColumnName="phong_id" />
+          <ScalarProperty Name="tietbd" ColumnName="tietbd" />
+          <ScalarProperty Name="tiettk" ColumnName="tiettk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thuchis">
+      <EntityTypeMapping TypeName="daotaotinchiModel.thuchi">
+        <MappingFragment StoreEntitySet="thuchi">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="sv_id" ColumnName="sv_id" />
+          <ScalarProperty Name="SoCT" ColumnName="SoCT" />
+          <ScalarProperty Name="NgayCT" ColumnName="NgayCT" />
+          <ScalarProperty Name="SoTien" ColumnName="SoTien" />
+          <ScalarProperty Name="Noidung" ColumnName="Noidung" />
+          <ScalarProperty Name="nguoithu_id" ColumnName="nguoithu_id" />
+          <ScalarProperty Name="ListHP" ColumnName="ListHP" />
+          <ScalarProperty Name="loai" ColumnName="loai" />
+          <ScalarProperty Name="HocLai" ColumnName="HocLai" />
+          <ScalarProperty Name="NoidungIn" ColumnName="NoidungIn" />
+          <ScalarProperty Name="SoUNC" ColumnName="SoUNC" />
+          <ScalarProperty Name="SoTK" ColumnName="SoTK" />
+          <ScalarProperty Name="maNH" ColumnName="maNH" />
+          <ScalarProperty Name="NgayUNC" ColumnName="NgayUNC" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="SotheSV" ColumnName="SotheSV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="thuhocphis">
+      <EntityTypeMapping TypeName="daotaotinchiModel.thuhocphi">
+        <MappingFragment StoreEntitySet="thuhocphi">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="idlop" ColumnName="idlop" />
+          <ScalarProperty Name="heso" ColumnName="heso" />
+          <ScalarProperty Name="idmuchocphi" ColumnName="idmuchocphi" />
+          <ScalarProperty Name="thanhtoan" ColumnName="thanhtoan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="treeviews">
+      <EntityTypeMapping TypeName="daotaotinchiModel.treeview">
+        <MappingFragment StoreEntitySet="treeview">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="capdaotao" ColumnName="capdaotao" />
+          <ScalarProperty Name="hethongdt" ColumnName="hethongdt" />
+          <ScalarProperty Name="khoahoc" ColumnName="khoahoc" />
+          <ScalarProperty Name="nganh" ColumnName="nganh" />
+          <ScalarProperty Name="lop" ColumnName="lop" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tuans">
+      <EntityTypeMapping TypeName="daotaotinchiModel.tuan">
+        <MappingFragment StoreEntitySet="tuan">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="tuan1" ColumnName="tuan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="daotaotinchiModel.user">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_dangky_hp">
+      <EntityTypeMapping TypeName="daotaotinchiModel.web_dangky_hp">
+        <MappingFragment StoreEntitySet="web_dangky_hp">
+          <ScalarProperty Name="Close" ColumnName="Close" />
+          <ScalarProperty Name="KhaoSat" ColumnName="KhaoSat" />
+          <ScalarProperty Name="hocphan_id" ColumnName="hocphan_id" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="lophp_id" ColumnName="lophp_id" />
+          <ScalarProperty Name="sv_id" ColumnName="sv_id" />
+          <ScalarProperty Name="thoigian" ColumnName="thoigian" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Huy" ColumnName="Huy" />
+          <ScalarProperty Name="lan2" ColumnName="lan2" />
+          <ScalarProperty Name="Capnhat" ColumnName="Capnhat" />
+          <ScalarProperty Name="lophp_xoa_id" ColumnName="lophp_xoa_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_dm_nhomhoidap">
+      <EntityTypeMapping TypeName="daotaotinchiModel.web_dm_nhomhoidap">
+        <MappingFragment StoreEntitySet="web_dm_nhomhoidap">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_hoidap">
+      <EntityTypeMapping TypeName="daotaotinchiModel.web_hoidap">
+        <MappingFragment StoreEntitySet="web_hoidap">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Nhom_id" ColumnName="Nhom_id" />
+          <ScalarProperty Name="hoi" ColumnName="hoi" />
+          <ScalarProperty Name="tg_hoi" ColumnName="tg_hoi" />
+          <ScalarProperty Name="dap" ColumnName="dap" />
+          <ScalarProperty Name="tg_dap" ColumnName="tg_dap" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_thoigiandk">
+      <EntityTypeMapping TypeName="daotaotinchiModel.web_thoigiandk">
+        <MappingFragment StoreEntitySet="web_thoigiandk">
+          <ScalarProperty Name="hocky_id" ColumnName="hocky_id" />
+          <ScalarProperty Name="namhoc_id" ColumnName="namhoc_id" />
+          <ScalarProperty Name="hocphan_id" ColumnName="hocphan_id" />
+          <ScalarProperty Name="Close" ColumnName="Close" />
+          <ScalarProperty Name="KhaoSat" ColumnName="KhaoSat" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="lophp_id" ColumnName="lophp_id" />
+          <ScalarProperty Name="Ngay1" ColumnName="Ngay1" />
+          <ScalarProperty Name="Ngay2" ColumnName="Ngay2" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_tintuc">
+      <EntityTypeMapping TypeName="daotaotinchiModel.web_tintuc">
+        <MappingFragment StoreEntitySet="web_tintuc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="cb_id" ColumnName="cb_id" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="ngaytao" ColumnName="ngaytao" />
+          <ScalarProperty Name="Noidung" ColumnName="Noidung" />
+          <ScalarProperty Name="batdau" ColumnName="batdau" />
+          <ScalarProperty Name="hethan" ColumnName="hethan" />
+          <ScalarProperty Name="QuanTrong" ColumnName="QuanTrong" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xetdatns">
+      <EntityTypeMapping TypeName="daotaotinchiModel.xetdatn">
+        <MappingFragment StoreEntitySet="xetdatn">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="congnhan" ColumnName="congnhan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="xettotnghieps">
+      <EntityTypeMapping TypeName="daotaotinchiModel.xettotnghiep">
+        <MappingFragment StoreEntitySet="xettotnghiep">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="masv" ColumnName="masv" />
+          <ScalarProperty Name="gdtc" ColumnName="gdtc" />
+          <ScalarProperty Name="gdqp" ColumnName="gdqp" />
+          <ScalarProperty Name="congnhan" ColumnName="congnhan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_users">
+      <EntityTypeMapping TypeName="daotaotinchiModel.web_users">
+        <MappingFragment StoreEntitySet="web_users">
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="locked" ColumnName="locked" />
+          <ScalarProperty Name="group_id" ColumnName="group_id" />
+          <ScalarProperty Name="pwd" ColumnName="pwd" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dm_noisinh">
+      <EntityTypeMapping TypeName="daotaotinchiModel.dm_noisinh">
+        <MappingFragment StoreEntitySet="dm_noisinh">
+          <ScalarProperty Name="loai" ColumnName="loai" />
+          <ScalarProperty Name="ten" ColumnName="ten" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_dangky_khaosat">
+      <EntityTypeMapping TypeName="daotaotinchiModel.web_dangky_khaosat">
+        <MappingFragment StoreEntitySet="web_dangky_khaosat">
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="Huy" ColumnName="Huy" />
+          <ScalarProperty Name="thoigian" ColumnName="thoigian" />
+          <ScalarProperty Name="sv_id" ColumnName="sv_id" />
+          <ScalarProperty Name="hocphan_id" ColumnName="hocphan_id" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

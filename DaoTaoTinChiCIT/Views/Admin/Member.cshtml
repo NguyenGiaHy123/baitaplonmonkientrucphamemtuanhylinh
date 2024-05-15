@@ -1,0 +1,438 @@
+﻿@using DaoTaoTinChiCIT.Models;
+@model IEnumerable<DaoTaoTinChiCIT.Models.web_users>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Quản Lý Người Dùng";
+    var stt = 1;
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("1"))
+{
+    <div class="span12">
+        @if (TempData.ContainsKey("Error"))
+        {
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Error"]
+            </div>
+        }
+        @if (TempData.ContainsKey("Success"))
+        {
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Success"]
+            </div>
+        }
+
+        <div class="widget">
+            <div class="widget-header">
+                <i class="fa fa-users"></i>
+                <h3>Danh sách tài khoản</h3>
+            </div>
+            <div class="widget-content">
+                <div style="margin-bottom: 20px">
+                    <button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus-circle"></i> Thêm tài khoản mới</button>
+                </div>
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 30px"> STT</th>
+                            <th style="width: auto"> Họ và tên</th>
+                            <th style="width: 200px"> Mã đăng nhập</th>
+                            <th style="width: 150px"> Nhóm</th>
+                            <th style="width: 100px"> Trạng thái</th>
+                            <th class="td-actions" style="width: 140px">
+                                <div class="btn-group">
+                                    <a class="btn btn-primary" href="~/Admin/Member"> Tất cả</a>
+                                    <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="~/Admin/Member/1" class="open-resetModal"> Admin</a></li>
+                                        <li><a href="~/Admin/Member/4" class="open-resetModal"> Giảng viên</a></li>
+                                        <li><a href="~/Admin/Member/5" class="open-resetModal"> Sinh viên</a></li>
+                                    </ul>
+                                </div>
+
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in ViewData["ListUsers"] as List<web_users>)
+                        {
+                            if (!item.username.Equals(Session["CurrentLogin"]))
+                            {
+                                <tr>
+                                    <td>@(stt++)</td>
+                                    <td>@item.fullName</td>
+                                    <td>@item.username</td>
+                                    <td>
+                                        @foreach (var nhom in ViewData["Nhom"] as List<group>)
+                                        {
+                                            if (nhom.id == item.group_id)
+                                            {
+                                                @nhom.name
+                                            }
+                                        }
+                                    </td>
+                                    <td style="text-align: center">
+                                        @if (item.locked == true)
+                                        {
+                                            <i class="fa fa-lock"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="fa fa-unlock"></i>
+                                        }
+                                    </td>
+                                    <td class="td-actions">
+                                        @*<a href="#editModal" class="btn btn-small btn-success open-editModal" data-id="@item.id" data-fullname="@item.fullName" data-username="@item.username" data-pwd="@item.pwd" data-group="@item.group_id" data-lock="@item.locked" data-toggle="modal"><i class="btn-icon-only fa fa-search"> </i></a>*@
+                                        @*<a href="#delModal" class="btn btn-small btn-danger open-delModal" data-id="@item.id" data-toggle="modal"><i class="btn-icon-only fa fa-trash"> </i></a>*@
+                                        <div class="btn-group">
+                                            <a class="btn btn-primary" href="#">Tùy chọn</a>
+                                            <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#editModal" class="open-editModal" data-id="@item.id" data-fullname="@item.fullName" data-username="@item.username" data-pwd="@item.pwd" data-group="@item.group_id" data-lock="@item.locked" data-toggle="modal"><i class="fa fa-pencil"></i> Edit</a></li>
+                                                <li><a href="#resetModal" class="open-resetModal" data-id="@item.id" data-toggle="modal"><i class="fa fa-refresh"></i> Reset Password</a></li>
+                                                @if (item.locked == true)
+                                                {
+                                                    <li><a href="#resModal" class="open-resModal" data-id="@item.id" data-toggle="modal"><i class="fa fa-unlock"></i> Unlock</a></li>
+                                                }
+                                                else
+                                                {
+                                                    <li><a href="#banModal" class="open-banModal" data-id="@item.id" data-toggle="modal"><i class="fa fa-lock"></i> Lock</a></li>
+                                                }
+                                                <li><a href="#delModal" class="open-delModal" data-id="@item.id" data-toggle="modal"><i class="fa fa-trash"></i> Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                    </tbody>
+                </table>
+
+                @*Thêm người dùng*@
+                <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Thêm tài khoản</h3>
+                    </div>
+                    <div class="modal-body">
+                        @using (Html.BeginForm("AddUser", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                        {
+                            <div class="row">
+                                <div class="span6" style="text-align: center">
+                                    <h4 class="control-label">Thêm mới:</h4>
+                                </div>
+                                <div class="span3" style="text-align: center">
+                                    <h4 class="control-label">Thêm từ danh sách:</h4>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="span6">
+                                    <div class="control-group">
+                                        <label class="control-label">Họ và tên:</label>
+                                        <div class="controls">
+                                            @Html.TextBox("HoTen", ViewData["HoTen"], new { @class = "span6", @placeholder = "Nhập họ tên người dùng" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span3">
+                                    <div class="control-group">
+                                        <label class="control-label">Mã đăng nhập:</label>
+                                        <div class="controls">
+                                            @Html.TextBox("MaDN", ViewData["MaDN"], new { @class = "span3", @placeholder = "Nhập mã đăng nhập" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="control-group">
+                                        <label class="control-label">Nhóm:</label>
+                                        <div class="controls">
+                                            <select name="Nhom" class="span3">
+                                                <option value="1">Quản trị</option>
+                                                <option value="4">Giảng viên</option>
+                                                <option value="5">Sinh viên</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3" style="text-align: center">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="button" class="btn btn-facebook-alt" data-dismiss="modal" aria-hidden="true" data-toggle="modal" data-target="#addModal"><i class="fa fa-briefcase"></i> Giảng viên</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span3">
+                                    <div class="control-group">
+                                        <label class="control-label">Mật khẩu:</label>
+                                        <div class="controls">
+                                            @Html.Password("MatKhau", ViewData["MatKhau"], new { @class = "span3", @placeholder = "Nhập mật khẩu" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <div class="control-group">
+                                        <label class="control-label">Nhập lại mật khẩu:</label>
+                                        <div class="controls">
+                                            @Html.Password("NhapLaiMK", ViewData["NhapLaiMK"], new { @class = "span3", @placeholder = "Nhập lại mật khẩu" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="span3" style="text-align: center">
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="button" class="btn btn-facebook-alt"><i class="fa fa-graduation-cap"></i> Sinh viên</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span6">
+                                    <div class="form-actions">
+                                        <button type="submit" class="btn btn-primary">Thêm</button>
+                                        <button type="reset" class="btn">Nhập lại</button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">Đóng</button>
+                    </div>
+                </div>
+
+                @*Sửa thông tin người dùng*@
+                <div id="editModal" class="modal-custom hide fade edit-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Sửa thông tin tài khoản</h3>
+                    </div>
+                    @using (Html.BeginForm("EditUser", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <label class="control-label">Mã đăng nhập:</label>
+                                        <div class="controls">
+                                            @Html.Hidden("ID", ViewData["ID"], new { @class = "ID", @id = "ID" })
+                                            @Html.TextBox("MaDN", ViewData["MaDN"], new { @class = "span4 MaDN", @placeholder = "Nhập mã đăng nhập" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <label class="control-label">Họ và tên:</label>
+                                        <div class="controls">
+                                            @Html.TextBox("HoTen", ViewData["HoTen"], new { @class = "span4 HoTen", @placeholder = "Nhập họ tên người dùng" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <label class="control-label">Nhóm:</label>
+                                        <div class="controls">
+                                            <select name="Nhom" class="span4" id="Nhom">
+                                                <option value="1">Quản trị</option>
+                                                <option value="4">Giảng viên</option>
+                                                <option value="5">Sinh viên</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Hủy</button>
+                            <button class="btn btn-primary">Sửa</button>
+                        </div>
+                    }
+                </div>
+
+                @*Xóa người dùng*@
+                <div id="delModal" class="modal-custom hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Xóa tài khoản</h3>
+                    </div>
+                    @using (Html.BeginForm("DelUser", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <input type="hidden" name="ID" class="ID" value="" />
+                                        <label class="control-label">Bạn có chắc chắn muốn xóa tài khoản này?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+                            <button class="btn btn-primary" type="submit">Có</button>
+                        </div>
+                    }
+                </div>
+
+                @*Khóa người dùng*@
+                <div id="banModal" class="modal-custom hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Khóa tài khoản người sử dụng</h3>
+                    </div>
+                    @using (Html.BeginForm("BanUser", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <input type="hidden" name="ID" class="ID" value="" />
+                                        <label class="control-label">Bạn có chắc chắn muốn khóa tài khoản này?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+                            <button class="btn btn-primary" type="submit">Có</button>
+                        </div>
+                    }
+                </div>
+
+                @*Khôi phục người dùng*@
+                <div id="resModal" class="modal-custom hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Khôi phục tài khoản người sử dụng</h3>
+                    </div>
+                    @using (Html.BeginForm("RestoreUser", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <input type="hidden" name="ID" class="ID" value="" />
+                                        <label class="control-label">Bạn có chắc chắn muốn khôi phục tài khoản này?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+                            <button class="btn btn-primary" type="submit">Có</button>
+                        </div>
+                    }
+                </div>
+
+                @*Khôi phục mật khẩu*@
+                <div id="resetModal" class="modal-custom hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Khôi phục mật khẩu</h3>
+                    </div>
+                    @using (Html.BeginForm("ResetPass", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <input type="hidden" name="ID" class="ID" value="" />
+                                        <label class="control-label">Bạn có chắc chắn muốn khôi phục mật khẩu của tài khoản này?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+                            <button class="btn btn-primary" type="submit">Có</button>
+                        </div>
+                    }
+                </div>
+
+                @*Thêm từ danh sách*@
+                <div id="addModal" class="modal-custom hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 id="myModalLabel">Xóa người dùng</h3>
+                    </div>
+                    @using (Html.BeginForm("DelUser", "Admin", FormMethod.Post, new { @class = "form-custom" }))
+                    {
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="span4">
+                                    <div class="control-group">
+                                        <input type="hidden" name="ID" class="ID" value="" />
+                                        <label class="control-label">Bạn có chắc chắn muốn xóa người dùng này?</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+                            <button class="btn btn-primary" type="submit">Có</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @section scripts {
+        <script type="text/javascript">
+            //Sửa
+            $(document).on("click", ".open-editModal", function () {
+                var id = $(this).data('id');
+                var fn = $(this).data('fullname');
+                var un = $(this).data('username');
+                var p = $(this).data('pwd');
+                var g = $(this).data('group');
+                var l = $(this).data('lock');
+                $(".edit-modal .modal-body .ID").val(id);
+                $(".edit-modal .modal-body .HoTen").val(fn);
+                $(".edit-modal .modal-body .MaDN").val(un);
+                $(".edit-modal .modal-body .MatKhau").val(p);
+                $('#Nhom option[value="' + g + '"]').prop('selected', true);
+                $(".edit-modal .modal-body .Khoa").val(l);
+            });
+
+            //Xóa
+            $(document).on("click", ".open-delModal", function () {
+                var id = $(this).data('id');
+                $(".modal-body .ID").val(id);
+            });
+
+            //Khóa
+            $(document).on("click", ".open-banModal", function () {
+                var id = $(this).data('id');
+                $(".modal-body .ID").val(id);
+            });
+
+            //Khôi phục tk
+            $(document).on("click", ".open-resModal", function () {
+                var id = $(this).data('id');
+                $(".modal-body .ID").val(id);
+            });
+
+            //Khôi phục tk
+            $(document).on("click", ".open-resetModal", function () {
+                var id = $(this).data('id');
+                $(".modal-body .ID").val(id);
+            });
+        </script>
+    }
+}
+else
+{
+    Response.Redirect("~/Accounts/Index");
+}

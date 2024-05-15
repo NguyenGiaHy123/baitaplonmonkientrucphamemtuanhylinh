@@ -1,0 +1,90 @@
+﻿@model DaoTaoTinChiCIT.Models.hoso_cb
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Thông Tin Cá Nhân";
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("4"))
+{
+    <div class="span12">
+        @if (TempData.ContainsKey("Error"))
+        {
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Error"]
+            </div>
+        }
+        @if (TempData.ContainsKey("Success"))
+        {
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Success"]
+            </div>
+        }
+
+        <div class="controls">
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group-custom">
+                    <div class="accordion-heading-custom">
+                        <a class="accordion-toggle-custom" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            <i class="fa fa-hand-o-right"></i> Thông tin chung
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <br />
+                            @using (Html.BeginForm("Info", "Teacher", FormMethod.Post))
+                            {
+                                
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group-custom">
+                    <div class="accordion-heading-custom">
+                        <a class="accordion-toggle-custom" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            <i class="fa fa-key"></i> Thay đổi mật khẩu
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            @using (Html.BeginForm("ChangePass", "Teacher", FormMethod.Post, new { @class = "form-horizontal form-horizontal-pass" }))
+                            {
+                                <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label-custom">Mật khẩu cũ</label>
+                                        <div class="controls">
+                                            @Html.Password("MatKhauCu", ViewData["MatKhauCu"], new { @class = "span4" })
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label-custom">Mật khẩu mới</label>
+                                        <div class="controls">
+                                            @Html.Password("MatKhauMoi", ViewData["MatKhauMoi"], new { @class = "span4" })
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label-custom">Xác nhận mật khẩu mới</label>
+                                        <div class="controls">
+                                            @Html.Password("NhapLaiMK", ViewData["NhapLaiMK"], new { @class = "span4" })
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn btn-primary">Thay đổi mật khẩu</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    Response.Redirect("~/Accounts/Index");
+}

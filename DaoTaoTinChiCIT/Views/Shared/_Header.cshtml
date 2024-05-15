@@ -1,0 +1,126 @@
+﻿<style>
+    .navbar-innerred {
+        background-color: #3298ce; /* Thay red bằng màu mong muốn */
+    }
+    .imagebannerbg {
+        width: 100%;
+        height: 230px;
+    }
+</style>
+
+<div class="navbar navbar-fixed-top">
+
+    <div class="navbar-innerred">
+      
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </a>
+            @Html.ActionLink("Trang Thông tin chủ  - Trường Đại học công nghiệp Tphcm Môn học kiến trúc phần mềm ", "Index", "Home", null, new { @class = "brand" })
+            <div class="nav-collapse">
+                @if (Session["CurrentLogin"] != null)
+                {
+                    if (Session["Pages"].ToString().Contains("Admin"))
+                    {
+                        <ul class="nav pull-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-user"></i> @Session["CurrentUser"].ToString() <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/Admin/Profiles">Trang cá nhân</a></li>
+                                    <li><a href="javascript:;">Cài đặt</a></li>
+                                    <li><a href="~/Accounts/Logout">Đăng xuất</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-search pull-right">
+                            <input type="text" class="search-query" placeholder="Search">
+                        </form>
+                    }
+                    else
+                    {
+                        using (Html.BeginForm("Logout", "Accounts", FormMethod.Post, new { @class = "navbar-search pull-right" }))
+                        {
+                            if (Session["Pages"].ToString().Contains("Teacher"))
+                            {
+                                <span class="current-info">Giảng viên: @Session["CurrentUser"].ToString()</span>
+                            }
+                            else if (Session["Pages"].ToString().Contains("Student"))
+                            {
+                                <span class="current-info">Sinh viên: @Session["CurrentUser"].ToString()</span>
+                            }
+                            <input class="btn-login" id="dangxuat" type="submit" value="Đăng xuất" />
+                        }
+                    }
+
+                }
+                else
+                {
+                    if (Session["Pages"].ToString().Contains("Login"))
+                    {
+                        <ul class="nav pull-right">
+                            <li class="">
+                                <a href="~/Home/Index" class="">
+                                    <i class="fa fa-chevron-left"></i>
+                                    Quay lại trang chủ
+                                </a>
+                            </li>
+                        </ul>
+                    }
+                    else
+                    {
+                        using (Html.BeginForm("Login", "Accounts", FormMethod.Post, new { @class = "navbar-search pull-right" }))
+                        {
+                            @Html.TextBox("MaTK", ViewData["MaTK"], new { @class = "span2", @placeholder = "Số thẻ sinh viên" })
+                            @Html.Password("MatKhau", ViewData["MatKhau"], new { @class = "span2", @placeholder = "Mật khẩu" })
+                            <input class="btn-login" id="dangnhap" type="submit" value="Đăng nhập" />
+                        }
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="https://lib.iuh.edu.vn/wp-content/uploads/2022/12/adv-iuh-new.gif" class="imagebannerbg"  alt="Banner IUH">
+    </div>
+
+</div>
+@if (!Session["Pages"].ToString().Contains("Login"))
+{
+    <div class="subnavbar">
+        <div class="subnavbar-inner">
+            <div class="container">
+                <ul class="mainnav">
+                    @if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("5"))
+                    {
+                        <li><a href="~/Student/Result"><i class="fa fa-user"></i><span>Trang Cá nhân</span></a></li>
+                        <li><a href="~/Student/Register"><i class="fa fa-check-square"></i><span>Đăng ký học tập</span></a></li>
+                        <li><a href="~/Student/Guide"><i class="fa fa-question-circle"></i><span>Hướng dẫn</span></a></li>
+                    }
+                    else if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("4"))
+                    {
+                        <li><a href="~/Teacher/Schedule"><i class="fa fa-calendar"></i><span>Lịch dạy học</span></a></li>
+                        <li><a href="~/Teacher/Profiles"><i class="fa fa-user"></i><span>Trang Cá nhân</span></a></li>
+                        <li><a href="~/Teacher/Notification"><i class="fa fa-bullhorn"></i><span>Thông báo</span></a></li>
+                    }
+                    else if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("1"))
+                    {
+                        <li><a href="~/Admin/Index"><i class="fa fa-dashboard"></i><span>Bảng điều khiển</span></a></li>
+                        <li><a href="~/Admin/Member"><i class="fa fa-users"></i><span>Quản lý tài khoản</span></a></li>
+                        <li><a href="~/Admin/Notification"><i class="fa fa-bullhorn"></i><span>Quản lý thông báo</span></a></li>
+                        <li><a href="~/Admin/Educate"><i class="fa fa-check-square"></i><span>Quản lý ĐK tín chỉ</span></a></li>
+                        @*<li><a href="~/Admin/Report"><i class="fa fa-bar-chart"></i><span>Báo cáo & Thống kê</span></a></li>*@
+                    }
+                    else
+                    {
+                        <li><a href="~/Home/Index"><i class="fa fa-bullhorn"></i><span>Thông báo</span></a></li>
+                        @*<li><a href="~/Home/Program"><i class="fa fa-briefcase"></i><span>Chương trình đào tạo</span></a></li>*@
+                        @*<li><a href="~/Home/Search"><i class="fa fa-search"></i><span>Tra cứu thông tin sinh viên</span></a></li>*@
+                        <li><a href="~/Home/Guide"><i class="fa fa-question-circle"></i><span>Hướng dẫn - Hỗ trợ</span></a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+}

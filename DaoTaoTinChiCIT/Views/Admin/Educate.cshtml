@@ -1,0 +1,65 @@
+﻿@using DaoTaoTinChiCIT.Models;
+
+@{
+    Layout = "~/Views/Admin/_Manage.cshtml";
+    ViewBag.Title = "Quản lý tín chỉ";
+    daotaotinchiEntities db = new daotaotinchiEntities();
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("1"))
+{
+    <div class="span9">
+        <div class="widget widget-nopad">
+            <div class="widget-header">
+                <i class="fa fa-pie-chart"></i>
+                <h3> Thống kê</h3>
+            </div>
+            <div class="widget-content">
+                <div class="widget big-stats-container">
+                    <div class="widget-content">
+                        <h6 class="bigstats">
+                            Thống kê đăng ký chính khóa
+                        </h6>
+                        <div id="big_stats" class="cf">
+                            <div class="stat">
+                                <i class="fa fa-check-square"></i>
+                                <span class="value">
+                                    @db.web_dangky_hp.Where(dk => dk.Huy == false && dk.KhaoSat == false && dk.Close == false).Count().ToString()
+                                </span>
+                            </div>
+                            <div class="stat">
+                                <i class="fa fa-close"></i>
+                                <span class="value">
+                                    @db.web_dangky_hp.Where(dk => dk.Huy == true && dk.KhaoSat == false && dk.Close == false).Count().ToString()
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-content" style="margin-top: 30px">
+                        <h6 class="bigstats">
+                            Thống kê đăng ký khảo sát
+                        </h6>
+                        <div id="big_stats" class="cf">
+                            <div class="stat">
+                                <i class="fa fa-check-square"></i>
+                                <span class="value">
+                                    @db.web_dangky_hp.Where(dk => dk.Huy == false && dk.KhaoSat == true && dk.Close == false).Count().ToString()
+                                </span>
+                            </div>
+                            <div class="stat">
+                                <i class="fa fa-close"></i>
+                                <span class="value">
+                                    @db.web_dangky_hp.Where(dk => dk.Huy == true && dk.KhaoSat == true && dk.Close == false).Count().ToString()
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    Response.Redirect("~/Accounts/Index");
+}

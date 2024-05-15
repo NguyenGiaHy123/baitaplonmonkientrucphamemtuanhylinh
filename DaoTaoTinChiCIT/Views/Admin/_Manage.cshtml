@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("1"))
+{
+    <div class="span3">
+        <div class="widget">
+            <div class="widget-header">
+                <i class="fa fa-check-square"></i>
+                <h3>Quản lý đăng ký tín chỉ</h3>
+            </div>
+            <div class="widget-content">
+                <ul>
+                    <li><a href="~/Admin/SubscriptionList">Danh sách sinh viên đăng ký</a></li>
+                    <li><a href="~/Admin/UnSubscriptionList">Danh sách sinh viên hủy đăng ký</a></li>
+                    <li><a href="~/Admin/ClassOpen">Lớp học phần đang mở đăng ký</a></li>
+                    <li><a href="~/Admin/PartialClasses">Danh sách lớp học phần</a></li>
+                    <li><a href="~/Admin/SurveyRegister">Mở đợt đăng ký khảo sát</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+
+    @section scripts{
+        <script>
+            // show modal
+            $(".show-modal").click(function () {
+                $("#myModalContent").load(this.href, function () {
+                    $("#myModal").modal({
+                        backdrop: 'static',
+                        keyboard: true
+                    }, 'show');
+                });
+                return false;
+            });
+
+            //Sửa thoi gian đăng ký
+            $(document).on("click", ".open-changeModal", function () {
+                var id = $(this).data('id');
+                var ma = $(this).data('ma');
+                var d1 = $(this).data('ngay1');
+                var d2 = $(this).data('ngay2');
+                var sc = $(this).data('socho');
+                var td = $(this).data('tieude');
+                var a = $(this).data('action');
+                $(".edit-modal .modal-body .ID").val(id);
+                $(".edit-modal .modal-body .MaLHP").val(ma);
+                $(".edit-modal .modal-body .MaHP").val(ma);
+                $(".edit-modal .modal-body .Ngay1").val(d1);
+                $(".edit-modal .modal-body .Ngay2").val(d2);
+                $(".edit-modal .modal-body .SoCho").val(sc);
+                $(".edit-modal .modal-body .Action").val(a);
+                document.getElementById("TieuDe").textContent = td;
+            });
+
+            //Xóa lớp học phần đang mở đăng ký
+            $(document).on("click", ".open-delModal", function () {
+                var id = $(this).data('id');
+                $(".modal-body .ID").val(id);
+            });
+        </script>
+    }
+}
+else
+{
+    Response.Redirect("~/Accounts/Index");
+}

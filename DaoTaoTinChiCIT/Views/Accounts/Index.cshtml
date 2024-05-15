@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Đăng nhập";
+}
+
+@if (Session["CurrentLogin"] != null)
+{
+    Response.Redirect("~/Teacher/Calendar");
+}
+
+<div class="account-container">
+    <div class="content clearfix">
+        @using (Html.BeginForm("Login", "Accounts", FormMethod.Post, new { @class = "navbar-search pull-right" }))
+        {
+            <h1>Đăng nhập</h1>
+            <div class="login-fields">
+                <p>Vui lòng nhập thông tin của bạn</p>
+                <div class="field">
+                    <label for="username">Tên tài khoản:</label>
+                    @Html.TextBox("MaTK", ViewData["MaTK"], new { @class = "login username-field", @placeholder = "Mã tài khoản", @autofocus = "true" })
+                </div>
+                <div class="field">
+                    <label for="password">Mật khẩu:</label>
+                    @Html.Password("MatKhau", ViewData["MatKhau"], new { @class = "login password-field", @placeholder = "Mật khẩu" })
+                </div>
+            </div>
+            <div class="login-actions">
+                <span class="login-checkbox">
+                    <a href="#">Quên mật khẩu</a>
+                </span>
+                <input class="button btn btn-success btn-large" id="dangnhap" type="submit" value="Xác nhận" />
+            </div>
+        }
+    </div>
+</div>

@@ -1,0 +1,24 @@
+﻿@model DaoTaoTinChiCIT.Models.hocphan
+
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Xác nhận đăng ký</h3>
+</div>
+@using (Html.BeginForm("Submit", "Student", FormMethod.Post, new { @class = "form-custom" }))
+{
+    <div class="modal-body">
+        <div class="row">
+            <div class="span4">
+                <div class="control-group">
+                    <input type="hidden" name="ID" class="ID" value="" />
+                    @Html.HiddenFor(hp => hp.ID)
+                    <label class="control-label">Đăng ký thành công! Bạn nên đăng ký thêm học phần @Html.DisplayFor(hp => hp.Ten)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+        <button class="btn btn-primary" type="submit">Có</button>
+    </div>
+}

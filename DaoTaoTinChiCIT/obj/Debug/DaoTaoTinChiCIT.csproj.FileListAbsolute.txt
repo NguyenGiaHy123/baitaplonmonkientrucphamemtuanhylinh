@@ -1,0 +1,139 @@
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll.config
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Microsoft.Web.Infrastructure.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Data.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Data.Entity.EF6.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Web.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\WebGrease.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.pdb
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.xml
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll.config
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Microsoft.Web.Infrastructure.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Data.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Data.Entity.EF6.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Web.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\WebGrease.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.Mvc.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.Mvc.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll.config
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Microsoft.Web.Infrastructure.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MoreLinq.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Data.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Data.Entity.EF6.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Web.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.Mvc.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\WebGrease.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.pdb
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MoreLinq.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.Mvc.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.xml
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.dll
+D:\STUDY\DUT\Ky 4\Do an\De tai\Project\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.pdb
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll.config
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\DaoTaoTinChiCIT.pdb
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Microsoft.Web.Infrastructure.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MoreLinq.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MySql.Data.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.Mvc.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Mvc.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\WebGrease.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Antlr3.Runtime.pdb
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\EntityFramework.SqlServer.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\MoreLinq.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\Newtonsoft.Json.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\PagedList.Mvc.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Optimization.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Razor.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Deployment.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Webpages.Razor.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Helpers.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\bin\System.Web.Mvc.xml
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.csprojAssemblyReference.cache
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.csproj.CoreCompileInputs.cache
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.csproj.CopyComplete
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.dll
+C:\ToanBo\TATCA BAITAP THUC HANH\sourcemoi\DangKyTinChi\Mã nguồn\DaoTaoTinChiCIT\DaoTaoTinChiCIT\obj\Debug\DaoTaoTinChiCIT.pdb

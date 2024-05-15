@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var info = ViewBag.UserInfo as DaoTaoTinChiCIT.Models.hoso_sv;
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("5"))
+{
+    <div class="span3">
+        <div class="widget">
+            <div class="pricing-plans plans-1">
+                <div class="plan-container">
+                    <div class="plan">
+                        <div class="plan-header">
+                            <div class="plan-title">
+                                MSSV: @Session["CurrentLogin"].ToString()
+                            </div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><strong>Họ tên:</strong> @Session["CurrentUser"].ToString()</li>
+                                <li><strong>Lớp:</strong> @Session["CurrentLop"].ToString()</li>
+                                <li><strong>Ngành:</strong> @Session["CurrentNganh"].ToString()</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="widget">
+            <div class="widget-header">
+                <i class="fa fa-graduation-cap"></i>
+                <h3> Thông tin sinh viên</h3>
+            </div>
+            <div class="widget-content">
+                <ul>
+                    <li><a href="~/Student/Result">Kết quả học tập</a></li>
+                    <li><a href="~/Student/Advisory">Tra cứu thông tin học tập</a></li>
+                    @*<li><a href="#">Thời khóa biểu</a></li>*@
+                    <li><a href="~/Student/Profiles">Thay đổi thông tin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    @RenderBody()
+}
+else
+{
+    Response.Redirect("~/Home/Index");
+}

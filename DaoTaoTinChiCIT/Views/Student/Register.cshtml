@@ -1,0 +1,344 @@
+﻿@using DaoTaoTinChiCIT.Models;
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Đăng Ký Học Tập";
+    var sttkq = 1;
+    var sttut = 1;
+    var stttc = 1;
+
+    var now = DateTime.Now;
+
+    int nganhkt = Convert.ToInt32(Session["Nganh"].ToString());
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("5"))
+{
+    <div class="span6">
+        @if (TempData.ContainsKey("Error"))
+        {
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Error"]
+            </div>
+        }
+        @if (TempData.ContainsKey("Success"))
+        {
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Success"]
+            </div>
+        }
+
+        <div class="widget widget-table action-table">
+            <div class="widget-header">
+                <i class="fa fa-book"></i>
+                <h3>Danh sách lớp học phần ưu tiên</h3>
+            </div>
+            <div class="widget-content">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 20px"> STT</th>
+                            <th style="width: 50px"> Mã HP</th>
+                            <th> Tên học phần</th>
+                            <th style="width: 40px"> Số TC</th>
+                            <th style="width: 140px"> Giảng viên</th>
+                            <th class="td-actions" style="width: 30px"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var lhpmdk in ViewData["LopHocPhanMoDK"] as List<web_thoigiandk>)
+                        {
+                            if ((DateTime.Compare(now, lhpmdk.Ngay1.Value)) > 0 && (DateTime.Compare(now, lhpmdk.Ngay2.Value)) < 0)
+                            {
+                                foreach (var dhp in ViewData["DiemChiTiet"] as List<lophpdktamthoi>)
+                                {
+                                    foreach (var lhpkt in ViewData["LopHocPhanKT"] as List<lophocphan>)
+                                    {
+                                        if (dhp.idlop == lhpkt.ID)
+                                        {
+                                            foreach (var hp in ViewData["HocPhan"] as List<hocphan>)
+                                            {
+                                                if (hp.ID == Convert.ToInt32(lhpmdk.hocphan_id) && hp.nganh_id == nganhkt && hp.ID == lhpkt.hocphan_id)
+                                                {
+                                                    foreach (var lhp in ViewData["LopHocPhan"] as List<lophocphan>)
+                                                    {
+                                                        if (lhp.ID == Convert.ToInt32(lhpmdk.lophp_id))
+                                                        {
+                                                            <tr>
+                                                                <td>@(sttut++)</td>
+                                                                <td>@hp.ma</td>
+                                                                <td><a href="~/Student/ViewDetail/@hp.ID" role="button" class="show-modal" data-toggle="modal">@hp.Ten</a></td>
+                                                                <td style="text-align: center">
+                                                                    @foreach (var khung in ViewData["KhungHP"] as List<khung_hp>)
+                                                                    {
+                                                                        if (khung.hp_id == hp.ID)
+                                                                        {
+                                                                            @khung.sotc
+                                                                        }
+                                                                    }
+                                                                </td>
+                                                                <td>
+                                                                    @if (lhp.giaovien_id == null || lhp.giaovien_id == 0)
+                                                                    {
+                                                                        foreach (var dv in (@ViewData["DonVi"] as List<donvi>))
+                                                                        {
+                                                                            if (dv.ID == lhp.donvi_id)
+                                                                            {
+                                                                                <label>@dv.Ten</label>
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        foreach (var gv in (@ViewData["GiaoVien"] as List<hoso_cb>))
+                                                                        {
+                                                                            if (gv.ID == lhp.giaovien_id)
+                                                                            {
+                                                                                <label>@gv.hodem @gv.ten</label>
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                </td>
+                                                                <td class="td-actions">
+                                                                    <a href="~/Student/ViewDetail/@hp.ID" role="button" class="btn btn-small btn-success show-modal" data-toggle="modal"><i class="btn-icon-only fa fa-search"> </i></a>
+                                                                </td>
+                                                            </tr>
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="widget widget-table action-table">
+            <div class="widget-header">
+                <i class="fa fa-book"></i>
+                <h3>Danh sách lớp học phần tùy chọn</h3>
+            </div>
+            <div class="widget-content">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 20px"> STT</th>
+                            <th style="width: 50px"> Mã HP</th>
+                            <th> Tên học phần</th>
+                            <th style="width: 40px"> Số TC</th>
+                            <th style="width: 140px"> Giảng viên</th>
+                            <th class="td-actions" style="width: 30px"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var lhpmdk in ViewData["LopHocPhanMoDK"] as List<web_thoigiandk>)
+                        {
+                            if ((DateTime.Compare(now, lhpmdk.Ngay1.Value)) > 0 && (DateTime.Compare(now, lhpmdk.Ngay2.Value)) < 0)
+                            {
+                                foreach (var hp in ViewData["HocPhan"] as List<hocphan>)
+                                {
+                                    if (hp.ID == Convert.ToInt32(lhpmdk.hocphan_id) && hp.nganh_id == nganhkt)
+                                    {
+                                        foreach (var lhp in ViewData["LopHocPhan"] as List<lophocphan>)
+                                        {
+                                            if (lhp.ID == Convert.ToInt32(lhpmdk.lophp_id))
+                                            {
+                                                <tr>
+                                                    <td>@(stttc++)</td>
+                                                    <td>@hp.ma</td>
+                                                    <td><a href="~/Student/ViewDetail/@hp.ID" role="button" class="show-modal" data-toggle="modal">@hp.Ten</a></td>
+                                                    <td style="text-align: center">
+                                                        @foreach (var khung in ViewData["KhungHP"] as List<khung_hp>)
+                                                        {
+                                                            if (khung.hp_id == hp.ID)
+                                                            {
+                                                                @khung.sotc
+                                                            }
+                                                        }
+                                                    </td>
+                                                    <td>
+                                                        @if (lhp.giaovien_id == null || lhp.giaovien_id == 0)
+                                                        {
+                                                            foreach (var dv in (@ViewData["DonVi"] as List<donvi>))
+                                                            {
+                                                                if (dv.ID == lhp.donvi_id)
+                                                                {
+                                                                    <label>@dv.Ten</label>
+                                                                }
+                                                            }
+                                                        }
+                                                        else
+                                                        {
+                                                            foreach (var gv in (@ViewData["GiaoVien"] as List<hoso_cb>))
+                                                            {
+                                                                if (gv.ID == lhp.giaovien_id)
+                                                                {
+                                                                    <label>@gv.hodem @gv.ten</label>
+                                                                }
+                                                            }
+                                                        }
+                                                    </td>
+                                                    <td class="td-actions">
+                                                        <a href="~/Student/ViewDetail/@hp.ID" role="button" class="btn btn-small btn-success show-modal" data-toggle="modal"><i class="btn-icon-only fa fa-search"> </i></a>
+                                                    </td>
+                                                </tr>
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="span6">
+        <div class="widget widget-table action-table">
+            <div class="widget-header">
+                <i class="fa fa-check-circle"></i>
+                <h3>Kết quả đăng ký tạm thời</h3>
+            </div>
+            <div class="widget-content">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 20px"> STT</th>
+                            <th> Tên học phần</th>
+                            <th style="width: 40px"> Số TC</th>
+                            <th style="width: 90px"> Thời khóa biểu</th>
+                            <th style="width: 110px"> Giảng viên</th>
+                            <th class="td-actions" style="width: 30px"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var kqdk in ViewData["KetQuaDK"] as List<web_dangky_hp>)
+                        {
+                            foreach (var hp in ViewData["HocPhan"] as List<hocphan>)
+                            {
+                                if (hp.ID == kqdk.hocphan_id)
+                                {
+                                    foreach (var lhp in ViewData["LopHocPhan"] as List<lophocphan>)
+                                    {
+                                        if (lhp.ID == kqdk.lophp_id)
+                                        {
+                                            <tr>
+                                                <td>@(sttkq++)</td>
+                                                <td> @lhp.Ten</td>
+                                                <td style="text-align: center">
+                                                    @foreach (var khung in ViewData["KhungHP"] as List<khung_hp>)
+                                                    {
+                                                        if (khung.hp_id == hp.ID)
+                                                        {
+                                                            @khung.sotc
+                                                        }
+                                                    }
+                                                </td>
+                                                <td>Tuần 1 - 12</td>
+                                                <td>
+                                                    @if (lhp.giaovien_id == null || lhp.giaovien_id == 0)
+                                                    {
+                                                        foreach (var dv in (@ViewData["DonVi"] as List<donvi>))
+                                                        {
+                                                            if (dv.ID == lhp.donvi_id)
+                                                            {
+                                                                <label>@dv.Ten</label>
+                                                            }
+                                                        }
+                                                    }
+                                                    else
+                                                    {
+                                                        foreach (var gv in (@ViewData["GiaoVien"] as List<hoso_cb>))
+                                                        {
+                                                            if (gv.ID == lhp.giaovien_id)
+                                                            {
+                                                                <label>@gv.hodem @gv.ten</label>
+                                                            }
+                                                        }
+                                                    }
+                                                </td>
+                                                <td class="td-actions">
+                                                    <a href="#delModal" class="btn btn-small btn-danger open-delModal" data-id="@kqdk.ID" data-toggle="modal"><i class="btn-icon-only fa fa-close"> </i></a>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+            @*<div class="form-actions-register">
+                    <div class="controls">
+                        <button class="btn btn-primary"><i class="fa fa-check-circle-o"></i> Xác nhận</button>
+                        <button class="btn btn-danger"><i class="fa fa-times-circle-o"></i> Hủy</button>
+                    </div>
+                </div>*@
+        </div>
+    </div>
+
+    @*Chi tiết lớp học phần*@
+    <div id="myModal" class="modal fade hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content" id="myModalContent"></div>
+        </div>
+    </div>
+
+    @*Hủy đăng ký*@
+    <div id="delModal" class="modal-custom hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel">Hủy đăng ký</h3>
+        </div>
+        @using (Html.BeginForm("CancelRegister", "Student", FormMethod.Post, new { @class = "form-custom" }))
+        {
+            <div class="modal-body">
+                <div class="row">
+                    <div class="span4">
+                        <div class="control-group">
+                            <input type="hidden" name="ID" class="ID" value="" />
+                            <label class="control-label">Bạn có muốn hủy học phần này?</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Không</button>
+                <button class="btn btn-primary" type="submit">Có</button>
+            </div>
+        }
+    </div>
+
+    @section scripts{
+        <script>
+            // show modal
+            $(".show-modal").click(function () {
+                $("#myModalContent").load(this.href, function () {
+                    $("#myModal").modal({
+                        backdrop: 'static',
+                        keyboard: true
+                    }, 'show');
+                });
+                return false;
+            });
+
+            //Hủy đăng ký
+            $(document).on("click", ".open-delModal", function () {
+                var id = $(this).data('id');
+                $(".modal-body .ID").val(id);
+            });
+        </script>
+    }
+}
+else
+{
+    Response.Redirect("~/Home/Index");
+}

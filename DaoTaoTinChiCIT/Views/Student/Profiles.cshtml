@@ -1,0 +1,204 @@
+﻿@model DaoTaoTinChiCIT.Models.hoso_sv
+
+@{
+    Layout = "~/Views/Student/_Account.cshtml";
+    ViewBag.Title = "Thay Đổi Thông Tin Cá Nhân";
+}
+
+@if (Session["CurrentLogin"] != null && Session["Group"].ToString().Contains("5"))
+{
+    <div class="span9">
+        @if (TempData.ContainsKey("Error"))
+        {
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Error"]
+            </div>
+        }
+        @if (TempData.ContainsKey("Success"))
+        {
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["Success"]
+            </div>
+        }
+
+        <div class="controls">
+            <div class="accordion" id="accordion2">
+                <div class="accordion-group-custom">
+                    <div class="accordion-heading-custom">
+                        <a class="accordion-toggle-custom" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            <i class="fa fa-edit"></i> Thay đổi thông tin
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <div class="accordion-inner">
+                            <br />
+                            @using (Html.BeginForm("ChangeInfo", "Student", FormMethod.Post))
+                            {
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Họ và tên:</label>
+                                            <div class="controls">
+                                                @Html.TextBox("HoTen", Session["CurrentUser"].ToString(), new { @class = "span3 disabled", @disabled = "true" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Lớp:</label>
+                                            <div class="controls">
+                                                @Html.TextBox("Lop", ViewData["Lop"], new { @class = "span3 disabled", @disabled = "true" })
+                                                @Html.HiddenFor(sv => sv.lop_id)
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Ngành:</label>
+                                            <div class="controls">
+                                                @Html.TextBox("Nganh", ViewData["Nganh"], new { @class = "span3 disabled", @disabled = "true" })
+                                                @Html.HiddenFor(sv => sv.nganh_id)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Số CMND:</label>
+                                            <div class="controls">
+                                                @Html.TextBoxFor(sv => sv.cmnd, new { @class = "span3 disabled", @disabled = "true" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Số TK ngân hàng:</label>
+                                            <div class="controls">
+                                                @Html.TextBoxFor(sv => sv.nganhang_sotk, new { @class = "span3 disabled", @disabled = "true" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Ngành 2:</label>
+                                            <div class="controls">
+                                                @Html.TextBox("Nganh", ViewData["Nganh"], new { @class = "span3 disabled", @disabled = "true" })
+                                                @Html.HiddenFor(sv => sv.nganh_id)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Giới tính:</label>
+                                            <div class="controls">
+                                                @Html.DropDownList("GioiTinh")
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Ngày sinh:</label>
+                                            <div class="controls">
+                                                @*@Html.TextBoxFor(sv => sv.ngaysinh.Value.Day, new { @class = "span1" })
+                                                    @Html.TextBoxFor(sv => sv.ngaysinh.Value.Month, new { @class = "span1" })
+                                                    @Html.TextBoxFor(sv => sv.ngaysinh.Value.Year, new { @class = "span1" })*@
+                                                @Html.TextBoxFor(sv => sv.ngaysinh, new { @Value = Model.ngaysinh.Value.ToString("dd/MM/yyyy"), @class = "span3", @id = "datetimepicker" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Dân tộc:</label>
+                                            <div class="controls">
+                                                @Html.DropDownList("DanToc")
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-fluid">
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Nơi sinh:</label>
+                                            <div class="controls">
+                                                @Html.DropDownList("NoiSinh")
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Số điện thoại:</label>
+                                            <div class="controls">
+                                                @Html.TextBoxFor(sv => sv.didong, new { @class = "span3" })
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span4">
+                                        <div class="control-group">
+                                            <label class="control-label">Quốc tịch:</label>
+                                            <div class="controls">
+                                                @Html.DropDownList("QuocTich")
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row-fluid">
+                                    <div style="margin-left: 40%; margin-top: 20px">
+                                        <button type="submit" class="btn btn-primary text-center">Lưu thông tin cá nhân</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-group-custom">
+                    <div class="accordion-heading-custom">
+                        <a class="accordion-toggle-custom" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                            <i class="fa fa-key"></i> Thay đổi mật khẩu
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="accordion-body collapse">
+                        <div class="accordion-inner">
+                            @using (Html.BeginForm("ChangePass", "Student", FormMethod.Post, new { @class = "form-horizontal form-horizontal-pass" }))
+                            {
+                                <fieldset>
+                                    <div class="control-group">
+                                        <label class="control-label-custom">Mật khẩu cũ</label>
+                                        <div class="controls">
+                                            @Html.Password("MatKhauCu", ViewData["MatKhauCu"], new { @class = "span4" })
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label-custom">Mật khẩu mới</label>
+                                        <div class="controls">
+                                            @Html.Password("MatKhauMoi", ViewData["MatKhauMoi"], new { @class = "span4" })
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label-custom">Xác nhận mật khẩu mới</label>
+                                        <div class="controls">
+                                            @Html.Password("NhapLaiMK", ViewData["NhapLaiMK"], new { @class = "span4" })
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <div class="controls">
+                                            <button type="submit" class="btn btn-primary">Thay đổi mật khẩu</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    Response.Redirect("~/Home/Index");
+}
